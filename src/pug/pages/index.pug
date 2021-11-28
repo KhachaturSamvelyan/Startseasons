@@ -1,0 +1,826 @@
+extends ../layout/layout.pug
+
+block variables
+	- var title = 'CТАРТ СЕЗОНА  |  Замена фундамента под домом';
+
+block links
+	- var link = 'main.css';
+
+block scripts
+	- var js = 'index.js';
+
+
+
+block content
+	section.main
+		.container
+			.row
+				header.main_header
+					.main_header__top
+						a(href="/").logo
+							img(src="img/logo.png", alt="" width="135" height="42") 
+						p.p Замена фундамента под домами в Москве и Московской области
+						a(href="#" data-bs-toggle="modal" data-bs-target="#exampleModal1").main_header__top-calc
+							svg(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16" fill="none")
+								mask(id="mask0_16_62" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="16" height="16")
+									rect(width="16" height="16" fill="url(#pattern0)")
+								
+								g(mask="url(#mask0_16_62)")
+									rect(y="-2" width="19" height="19" fill="#67CF7F")
+								
+								defs
+									pattern(id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1")
+										use(xlink:href="#image0_16_62" transform="scale(0.015625)")
+									
+									image(id="image0_16_62" width="64" height="64" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAJxSURBVHic7ZuxTiMxEIY/DgTSCRANEtI9C0iR7goQDXkDWorwcrwDxRVwFQgpokHJkTYgQQXFjoXX6yjx4vVssv6lkXbH8fDPj+1xDIYvbAID4BqYAh8rZlPJbSC5lvALuGkByVR2IzmDqNGl5I3dAlvrwAVwTvdwAEygmBeuOg9AH9jVYhcRuxS5PFDN8xrg3XHeA3saTBvGHkVudq5vUFWlr0QwBfpU8604VmHYz8I2Tr5r8mBjLTWrxCjl+0OLRVuQBdAmoI2YAhwDI7HjiHEbR6Us1MTIijGKwKspNFYFlqWa5CpgIwugTUAbdQQwq/28xdNtX7Q6zIo/z2pXn9AqUIdcSHVoOn6pT+op0HRlqBU/dAScAGNPv3n2JH214+d9gP2Sq4A2AW1kASLGGlvP/yPGbRyxvg2a1XvR1VgL+UzQfslrgDYBbWQBtAloIwugTUAbWQBtAtrIAnyj7xnwDAyBQ0/7obRN5LOLovVnggYTq88r0LPaeuIz7c8BcZOeCW4EEHMxBfbl+SdwBZzK+5X4DF6+8XNCkORM0OCI8m/ZjASf7yggbtIzQa8jAO5Qd82dGm1AVAFgtghtTB4cnp0vg5CnQOsWwab3AdEEGFJNtId/VAwD4ibdB3gdC6KNG6GxJ56LaAKcUYjwyOyt8KN8JuTfb5f2b4PLglK+nS+DWQBtAtrIAmgT0IZPgJ3kLNJh23X4BPidgIgW/vic7qWpO1b30tQd5Vyn4L82d0+xe1uF6bBDkYt7Y+wDuTY38DR0xQYAWxTXSLXJpLZ/kjvQvcvTt1iXpw02gUvgL8UxtjbJ2PYiuV1iXZ//BBg+brlPz5BgAAAAAElFTkSuQmCC")
+							span Калькулятор проекта 
+						.main_header__top-social
+							a(href="https://wa.me/+7 (999) 992-12-12") 
+								svg(xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none")
+									path(d="M20 9.74244C20 15.1231 15.6047 19.4849 10.1818 19.4849C8.46022 19.4849 6.84289 19.0449 5.43578 18.2727L0 20L1.77222 14.7729C0.878222 13.3049 0.363333 11.5831 0.363333 9.74244C0.363333 4.36178 4.75911 0 10.1818 0C15.6051 0 20 4.36178 20 9.74244ZM10.1818 1.55156C5.62978 1.55156 1.92711 5.226 1.92711 9.74244C1.92711 11.5347 2.51133 13.1944 3.49956 14.5447L2.46822 17.5867L5.64044 16.5784C6.94378 17.4342 8.50511 17.9333 10.182 17.9333C14.7333 17.9333 18.4367 14.2593 18.4367 9.74289C18.4367 5.22644 14.7336 1.55156 10.1818 1.55156ZM15.1398 11.9862C15.0791 11.8869 14.9189 11.8269 14.6784 11.7076C14.4376 11.5882 13.254 11.0102 13.034 10.9309C12.8133 10.8513 12.6524 10.8113 12.4922 11.0502C12.332 11.2893 11.8707 11.8269 11.73 11.9862C11.5896 12.146 11.4493 12.166 11.2084 12.0464C10.968 11.9271 10.1927 11.6747 9.27333 10.8613C8.558 10.2284 8.07489 9.44711 7.93444 9.20778C7.79422 8.96889 7.91978 8.83978 8.04 8.72089C8.14844 8.61378 8.28089 8.442 8.40111 8.30267C8.52178 8.16311 8.56178 8.06378 8.64156 7.90422C8.72222 7.74489 8.682 7.60556 8.62156 7.48578C8.56156 7.36644 8.07978 6.19133 7.87933 5.71311C7.67889 5.23533 7.47867 5.31489 7.338 5.31489C7.19778 5.31489 7.03711 5.29489 6.87667 5.29489C6.71622 5.29489 6.45533 5.35467 6.23467 5.59356C6.01422 5.83267 5.39267 6.41044 5.39267 7.58533C5.39267 8.76044 6.25467 9.89578 6.37533 10.0549C6.49556 10.214 8.03978 12.7038 10.4864 13.66C12.9333 14.6158 12.9333 14.2969 13.3747 14.2569C13.8156 14.2171 14.7982 13.6793 14.9996 13.122C15.1996 12.5638 15.1996 12.0858 15.1398 11.9862Z" fill="#11DC5F")
+									
+							a(href="https://t.me/+7 (999) 992-12-12") 
+								svg(xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none")
+									g(clip-path="url(#clip0_16_4561)")
+									path(d="M18.3764 1.77432L0.657317 8.64254C-0.0557229 8.96236 -0.296898 9.60291 0.484944 9.95051L5.03069 11.4026L16.0216 4.57485C16.6217 4.14621 17.2361 4.26051 16.7074 4.73202L7.2677 13.3232L6.97117 16.959C7.24583 17.5204 7.74873 17.523 8.0695 17.244L10.6811 14.76L15.154 18.1267C16.1928 18.7449 16.7581 18.346 16.9816 17.2129L19.9154 3.24924C20.22 1.85447 19.7006 1.23994 18.3764 1.77432Z" fill="#37AEE2")
+								
+									defs
+										clipPath(id="clip0_16_456")
+											rect(width="20" height="20" fill="white")
+							a(href="tel:+7 (495)133-72-21").tel-icon
+								svg(xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none")
+									g(clip-path="url(#clip0_19_1168)")
+										path(d="M18.9145 15.1444L18.82 14.8594C18.596 14.1937 17.8618 13.4994 17.1874 13.3164L14.6912 12.6345C14.0142 12.4504 13.0486 12.698 12.5534 13.1932L11.6499 14.0966C8.36672 13.2095 5.79216 10.6348 4.90618 7.35226L5.80964 6.4488C6.30492 5.95353 6.55251 4.98919 6.36835 4.31226L5.68768 1.81483C5.50351 1.13914 4.80791 0.404993 4.14345 0.183479L3.8585 0.0876734C3.19276 -0.133841 2.24331 0.090182 1.74808 0.585414L0.396693 1.93803C0.155269 2.17818 0.000969679 2.86507 0.000969679 2.86758C-0.0462958 7.1581 1.63607 11.2918 4.67101 14.3268C7.69851 17.3543 11.8167 19.0342 16.0948 18.9981C16.1172 18.9981 16.824 18.8463 17.0654 18.6061L18.4168 17.2547C18.912 16.7595 19.136 15.8101 18.9145 15.1444Z" fill="black")
+										
+									defs
+										clipPath(id="clip0_19_1168")
+											rect(width="19" height="19" fill="white")
+								
+							span Среднее время ответа 
+								b 2 минуты
+						a(href="tel:+74951337221").main_header__top-tel
+							span ежедневно с 9 до 19
+							p +7 (495) 133-72-21
+						button(type="button" data-bs-toggle="modal" data-bs-target="#exampleModal") Бесплатная консультация
+						.main_header__top-burger
+							svg(xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16" fill="none")
+								path(d="M25 2H1C0.734784 2 0.48043 1.89464 0.292893 1.70711C0.105357 1.51957 0 1.26522 0 1C0 0.734784 0.105357 0.48043 0.292893 0.292893C0.48043 0.105357 0.734784 0 1 0H25C25.2652 0 25.5196 0.105357 25.7071 0.292893C25.8946 0.48043 26 0.734784 26 1C26 1.26522 25.8946 1.51957 25.7071 1.70711C25.5196 1.89464 25.2652 2 25 2Z" fill="black")
+								path(d="M25 9H1C0.734784 9 0.48043 8.89464 0.292893 8.70711C0.105357 8.51957 0 8.26522 0 8C0 7.73478 0.105357 7.48043 0.292893 7.29289C0.48043 7.10536 0.734784 7 1 7H25C25.2652 7 25.5196 7.10536 25.7071 7.29289C25.8946 7.48043 26 7.73478 26 8C26 8.26522 25.8946 8.51957 25.7071 8.70711C25.5196 8.89464 25.2652 9 25 9Z" fill="black")
+								path(d="M25 16H1C0.734784 16 0.48043 15.8946 0.292893 15.7071C0.105357 15.5196 0 15.2652 0 15C0 14.7348 0.105357 14.4804 0.292893 14.2929C0.48043 14.1054 0.734784 14 1 14H25C25.2652 14 25.5196 14.1054 25.7071 14.2929C25.8946 14.4804 26 14.7348 26 15C26 15.2652 25.8946 15.5196 25.7071 15.7071C25.5196 15.8946 25.2652 16 25 16Z" fill="black")
+						.mobile-menu
+							.main_header__top-mobile
+								.scroll-container
+									.main_header__top-mobile_header
+										a(href="#")
+											img(src="img/logo.png", alt="" width="135" height="42") 
+										svg.close-menu(xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none")
+											path(d="M10.754 10.0469L19.4161 1.38481C19.6114 1.18956 19.6114 0.873 19.4161 0.67775C19.2208 0.4825 18.9043 0.4825 18.709 0.67775L10.0469 9.33975L1.38486 0.677687C1.18961 0.482437 0.873047 0.482437 0.677797 0.677687C0.482484 0.872938 0.482484 1.1895 0.677797 1.38475L9.3398 10.0469L0.677734 18.7089C0.482422 18.9042 0.482422 19.2208 0.677734 19.4161C0.775359 19.5137 0.903297 19.5625 1.0313 19.5625C1.1593 19.5625 1.28723 19.5137 1.38486 19.4161L10.0469 10.754L18.709 19.4161C18.8067 19.5137 18.9345 19.5625 19.0625 19.5625C19.1905 19.5625 19.3185 19.5137 19.4161 19.4161C19.6114 19.2208 19.6114 18.9042 19.4161 18.7089L10.754 10.0469Z" fill="black")
+									ul
+										li
+											a(href="#service") Услуги
+										li
+											a(href="#step") Этапы работ
+										li
+											a(href="#service") Акция
+										li
+											a(href="#work") Наши работы
+										li
+											a(href="#rew") Отзывы
+										li
+											a(href="#que") Вопрос-ответ
+										li
+											a(href="#contact") Контакты
+									.tel-info
+										span ежедневно с 9 до 19
+										a(href="tel:+74951337221").main_header__top-tel
+											p +7 (495) 133-72-21
+										a(href="https://wa.me/+79999921212").main_header__top-tel
+											p +7 (999) 992-12-12
+											svg(xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none")
+												path(d="M20 9.74244C20 15.1231 15.6047 19.4849 10.1818 19.4849C8.46022 19.4849 6.84289 19.0449 5.43578 18.2727L0 20L1.77222 14.7729C0.878222 13.3049 0.363333 11.5831 0.363333 9.74244C0.363333 4.36178 4.75911 0 10.1818 0C15.6051 0 20 4.36178 20 9.74244ZM10.1818 1.55156C5.62978 1.55156 1.92711 5.226 1.92711 9.74244C1.92711 11.5347 2.51133 13.1944 3.49956 14.5447L2.46822 17.5867L5.64044 16.5784C6.94378 17.4342 8.50511 17.9333 10.182 17.9333C14.7333 17.9333 18.4367 14.2593 18.4367 9.74289C18.4367 5.22644 14.7336 1.55156 10.1818 1.55156ZM15.1398 11.9862C15.0791 11.8869 14.9189 11.8269 14.6784 11.7076C14.4376 11.5882 13.254 11.0102 13.034 10.9309C12.8133 10.8513 12.6524 10.8113 12.4922 11.0502C12.332 11.2893 11.8707 11.8269 11.73 11.9862C11.5896 12.146 11.4493 12.166 11.2084 12.0464C10.968 11.9271 10.1927 11.6747 9.27333 10.8613C8.558 10.2284 8.07489 9.44711 7.93444 9.20778C7.79422 8.96889 7.91978 8.83978 8.04 8.72089C8.14844 8.61378 8.28089 8.442 8.40111 8.30267C8.52178 8.16311 8.56178 8.06378 8.64156 7.90422C8.72222 7.74489 8.682 7.60556 8.62156 7.48578C8.56156 7.36644 8.07978 6.19133 7.87933 5.71311C7.67889 5.23533 7.47867 5.31489 7.338 5.31489C7.19778 5.31489 7.03711 5.29489 6.87667 5.29489C6.71622 5.29489 6.45533 5.35467 6.23467 5.59356C6.01422 5.83267 5.39267 6.41044 5.39267 7.58533C5.39267 8.76044 6.25467 9.89578 6.37533 10.0549C6.49556 10.214 8.03978 12.7038 10.4864 13.66C12.9333 14.6158 12.9333 14.2969 13.3747 14.2569C13.8156 14.2171 14.7982 13.6793 14.9996 13.122C15.1996 12.5638 15.1996 12.0858 15.1398 11.9862Z" fill="#11DC5F")
+											svg(xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none")
+												g(clip-path="url(#clip0_16_456)")
+												path(d="M18.3764 1.77432L0.657317 8.64254C-0.0557229 8.96236 -0.296898 9.60291 0.484944 9.95051L5.03069 11.4026L16.0216 4.57485C16.6217 4.14621 17.2361 4.26051 16.7074 4.73202L7.2677 13.3232L6.97117 16.959C7.24583 17.5204 7.74873 17.523 8.0695 17.244L10.6811 14.76L15.154 18.1267C16.1928 18.7449 16.7581 18.346 16.9816 17.2129L19.9154 3.24924C20.22 1.85447 19.7006 1.23994 18.3764 1.77432Z" fill="#37AEE2")
+											
+												defs
+													clipPath(id="clip0_16_456")
+														rect(width="20" height="20" fill="white")
+
+									button(data-bs-toggle="modal" data-bs-target="#exampleModal") Бесплатная консультация
+									button(data-bs-toggle="modal" data-bs-target="#exampleModal1").calc-btn
+										svg(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16" fill="none")
+											mask(id="mask0_16_621" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="16" height="16")
+												rect(width="16" height="16" fill="url(#pattern1)")
+											
+											g(mask="url(#mask0_16_62)")
+												rect(y="-2" width="19" height="19" fill="#67CF7F")
+											
+											defs
+												pattern(id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1")
+													use(xlink:href="#image0_16_621" transform="scale(0.015625)")
+												
+												image(id="image0_16_62" width="64" height="64" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAJxSURBVHic7ZuxTiMxEIY/DgTSCRANEtI9C0iR7goQDXkDWorwcrwDxRVwFQgpokHJkTYgQQXFjoXX6yjx4vVssv6lkXbH8fDPj+1xDIYvbAID4BqYAh8rZlPJbSC5lvALuGkByVR2IzmDqNGl5I3dAlvrwAVwTvdwAEygmBeuOg9AH9jVYhcRuxS5PFDN8xrg3XHeA3saTBvGHkVudq5vUFWlr0QwBfpU8604VmHYz8I2Tr5r8mBjLTWrxCjl+0OLRVuQBdAmoI2YAhwDI7HjiHEbR6Us1MTIijGKwKspNFYFlqWa5CpgIwugTUAbdQQwq/28xdNtX7Q6zIo/z2pXn9AqUIdcSHVoOn6pT+op0HRlqBU/dAScAGNPv3n2JH214+d9gP2Sq4A2AW1kASLGGlvP/yPGbRyxvg2a1XvR1VgL+UzQfslrgDYBbWQBtAloIwugTUAbWQBtAtrIAnyj7xnwDAyBQ0/7obRN5LOLovVnggYTq88r0LPaeuIz7c8BcZOeCW4EEHMxBfbl+SdwBZzK+5X4DF6+8XNCkORM0OCI8m/ZjASf7yggbtIzQa8jAO5Qd82dGm1AVAFgtghtTB4cnp0vg5CnQOsWwab3AdEEGFJNtId/VAwD4ibdB3gdC6KNG6GxJ56LaAKcUYjwyOyt8KN8JuTfb5f2b4PLglK+nS+DWQBtAtrIAmgT0IZPgJ3kLNJh23X4BPidgIgW/vic7qWpO1b30tQd5Vyn4L82d0+xe1uF6bBDkYt7Y+wDuTY38DR0xQYAWxTXSLXJpLZ/kjvQvcvTt1iXpw02gUvgL8UxtjbJ2PYiuV1iXZ//BBg+brlPz5BgAAAAAElFTkSuQmCC")
+										|Калькулятор проекта
+
+
+					.main_header__bottom
+						ul 
+							li 
+								a(href="#service") Услуги
+							li 
+								a(href="#step") Этапы работ
+							li 
+								a(href="#service")
+									svg(xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none")
+										path(d="M4.25004 8.5H8.75004C8.88854 8.5 9.00004 8.6115 9.00004 8.75C9.00004 8.8885 8.88854 9 8.75004 9H4.25004C4.11154 9 4.00004 8.8885 4.00004 8.75C4.00004 8.6115 4.11154 8.5 4.25004 8.5ZM6.50004 9.5C5.95004 9.5 5.50004 9.95 5.50004 10.5C5.50004 11.05 5.95004 11.5 6.50004 11.5C7.05004 11.5 7.50004 11.05 7.50004 10.5C7.50004 9.95 7.05004 9.5 6.50004 9.5ZM6.50004 10C6.77904 10 7.00004 10.221 7.00004 10.5C7.00004 10.779 6.77904 11 6.50004 11C6.22104 11 6.00004 10.779 6.00004 10.5C6.00004 10.221 6.22104 10 6.50004 10ZM6.50004 6C5.95004 6 5.50004 6.45 5.50004 7C5.50004 7.55 5.95004 8 6.50004 8C7.05004 8 7.50004 7.55 7.50004 7C7.50004 6.45 7.05004 6 6.50004 6ZM6.50004 6.5C6.77904 6.5 7.00004 6.721 7.00004 7C7.00004 7.279 6.77904 7.5 6.50004 7.5C6.22104 7.5 6.00004 7.279 6.00004 7C6.00004 6.721 6.22104 6.5 6.50004 6.5ZM12.5 1.5C11.95 1.5 11.5 1.95 11.5 2.5C11.5 3.05 11.95 3.5 12.5 3.5C13.05 3.5 13.5 3.05 13.5 2.5C13.5 1.95 13.05 1.5 12.5 1.5ZM12.5 2C12.779 2 13 2.221 13 2.5C13 2.779 12.779 3 12.5 3C12.221 3 12 2.779 12 2.5C12 2.221 12.221 2 12.5 2ZM0.223038 7.835C-0.0704623 8.125 -0.0684623 8.606 0.223038 8.897L6.10304 14.777C6.39304 15.068 6.87404 15.0705 7.16454 14.777L14.4275 7.425C14.551 7.3 14.6935 7.185 14.8115 6.997C14.929 6.809 14.9995 6.562 14.9995 6.225V0.75C14.9995 0.3385 14.6605 0 14.2495 0H8.74954C8.17054 0 7.83754 0.312 7.57454 0.5725L0.223038 7.835ZM0.574538 8.191L7.92504 0.928C8.19154 0.665 8.32904 0.5 8.75004 0.5H14.25C14.3925 0.5 14.5 0.607 14.5 0.75V6.226C14.5 6.4995 14.4535 6.6285 14.388 6.7325C14.323 6.8375 14.216 6.9295 14.073 7.0745L6.80804 14.4245C6.70954 14.5245 6.55804 14.5245 6.45654 14.4235L0.576538 8.5435C0.475038 8.442 0.474038 8.2895 0.574538 8.1905V8.191Z" fill="#CEBB0D")
+									p Акция
+							li 
+								a(href="#work") Наши работы
+							li 
+								a(href="#rew") Отзывы
+							li 
+								a(href="#que") Вопрос-ответ
+							li 
+								a(href="#contact") Контакты
+
+				.main-blok
+					h1 Замена фундамента под домом
+					p тут дополнительное описание вашей услуги
+					span от 2 499 руб./кв.м
+					.main-blok-btn
+						button(data-bs-toggle="modal" data-bs-target="#exampleModal1") Рассчитать стоимость за 5 шагов
+						.main-blok-btn_arrow
+							svg(xmlns="http://www.w3.org/2000/svg" width="37" height="38" viewBox="0 0 37 38" fill="none")
+								path(d="M4.5672 0.755828C4.35572 0.578255 4.04033 0.60574 3.86276 0.817217L0.969042 4.26343C0.791469 4.47491 0.818954 4.7903 1.03043 4.96787C1.24191 5.14544 1.5573 5.11796 1.73487 4.90648L4.30706 1.84318L7.37036 4.41537C7.58184 4.59294 7.89723 4.56546 8.0748 4.35398C8.25237 4.1425 8.22489 3.82712 8.01341 3.64954L4.5672 0.755828ZM5.00453 4.08739L4.74378 1.09533L3.74756 1.18215L4.00831 4.17421L5.00453 4.08739ZM36.523 36.9831C19.5976 34.7758 6.48639 21.0917 5.00453 4.08739L4.00831 4.17421C5.53092 21.6462 19.0027 35.7067 36.3937 37.9747L36.523 36.9831Z" fill="#CBCBCB")
+							p Ответьте на 5 вопросов и узнайте стоимость замены фундамента
+		
+		.container.main-bottom
+			.row
+				.col-6.col-lg-3.main-bottom_item
+					img(src="img/icon1.png", alt="" width="78px" height="51px")
+					p 
+						b Профессиональное 
+						| оборудование
+				.col-6.col-lg-3.main-bottom_item
+					img(src="img/icon2.png", alt="" width="65px" height="53px")
+					p Заменили фундамент более чем 
+						b 150 домам
+						
+				.col-6.col-lg-3.main-bottom_item
+					img(src="img/icon3.png", alt="" width="65px" height="39px")
+					p Помогаем нашим клиентам с 
+						b 2015 года
+						
+				.col-6.col-lg-3.main-bottom_item
+					img(src="img/icon4.png", alt="" width="78px" height="53px")
+					p Работаем по договору 
+						b с гарантией
+						
+
+
+	section.service#service
+		img(src="img/serviceImg.png", alt="").right-img
+		.container
+			.row.service-title
+				h2 Какие услуги мы выполняем
+				p Маленький текст, который можно добавить к каждому блоку
+			.row.service-blok
+				.col.col-lg-6.col-sm-12.service-item
+					img(src="img/service1.jpg", alt="")
+					p.title Замена фундамента 
+						br 
+						|на винтовые сваи
+					ul
+						li Винтовая свая 108мм
+						li Швеллер 16
+						li Двутавр 20
+						li Брус 150х150 или 200х200
+						li Подъем строения
+						li Демонтажные работы
+			
+					span.sale-span Акция!
+					p.sale-p от 21 000 р.
+					p.price.red  от 15 900 р.
+					button(data-bs-toggle="modal" data-bs-target="#exampleModal1") Рассчитать стоимость
+
+				.col.col-lg-6.col-sm-12.service-item
+					img(src="img/service2.jpg", alt="")
+					p.title.f-start Замена фундамента 
+						br
+						|на мелкозаглубленный
+					ul
+						li Арматура d12 A3
+						li Арматура d6 A1
+						li Бетон М300, песок или ПГС
+						li Демонтаж монолитного фундамента
+						li Демонтаж кирпичного фундамента
+						li Демонтаж  из винтовых свай
+						li Установка 20-й двутавровой балки
+					p.price от 8500 р./м.п.
+					button(data-bs-toggle="modal" data-bs-target="#exampleModal1") Рассчитать стоимость
+				.col.col-lg-6.col-sm-12.service-item
+					img(src="img/service3.jpg", alt="")
+					p.title.f-start Замена фундамента 
+						br
+						|на столбчато-ленточный
+					ul
+						li Арматура d12 A3
+						li Арматура d6 A1
+						li Бетон М300, песок или ПГС
+						li Демонтаж монолитного фундамента
+						li Демонтаж кирпичного фундамента
+						li Демонтаж из винтовых свай
+						li Установка 20-й двутавровой балки
+			
+					
+					p.price от 9500 р./м.п.
+					button(data-bs-toggle="modal" data-bs-target="#exampleModal1") Рассчитать стоимость
+
+
+
+	section.step#step
+		.container
+			.row.service-title
+				h2 5 шагов к замене фундамента
+				p Маленький текст, который можно добавить к каждому блоку
+		.step-item
+			img(src="img/step.png", alt="").left-img
+			.container
+				.step-item-row
+					.step-item-row-info
+						p 1
+						span Подготовка дома к замене фундамента
+					svg(xmlns="http://www.w3.org/2000/svg" width="30" height="8" viewBox="0 0 30 8" fill="none")
+						path(opacity="0.5" d="M29.3536 4.35355C29.5488 4.15829 29.5488 3.84171 29.3536 3.64645L26.1716 0.464466C25.9763 0.269204 25.6597 0.269204 25.4645 0.464466C25.2692 0.659728 25.2692 0.976311 25.4645 1.17157L28.2929 4L25.4645 6.82843C25.2692 7.02369 25.2692 7.34027 25.4645 7.53553C25.6597 7.7308 25.9763 7.7308 26.1716 7.53553L29.3536 4.35355ZM0 4.5H29V3.5H0V4.5Z" fill="black")
+					.step-item-row-info
+						p 2
+						span Обустройство нового фундамента
+					svg(xmlns="http://www.w3.org/2000/svg" width="30" height="8" viewBox="0 0 30 8" fill="none")
+						path(opacity="0.5" d="M29.3536 4.35355C29.5488 4.15829 29.5488 3.84171 29.3536 3.64645L26.1716 0.464466C25.9763 0.269204 25.6597 0.269204 25.4645 0.464466C25.2692 0.659728 25.2692 0.976311 25.4645 1.17157L28.2929 4L25.4645 6.82843C25.2692 7.02369 25.2692 7.34027 25.4645 7.53553C25.6597 7.7308 25.9763 7.7308 26.1716 7.53553L29.3536 4.35355ZM0 4.5H29V3.5H0V4.5Z" fill="black")
+					.step-item-row-info
+						p 3
+						span Подъем здания
+					svg(xmlns="http://www.w3.org/2000/svg" width="30" height="8" viewBox="0 0 30 8" fill="none")
+						path(opacity="0.5" d="M29.3536 4.35355C29.5488 4.15829 29.5488 3.84171 29.3536 3.64645L26.1716 0.464466C25.9763 0.269204 25.6597 0.269204 25.4645 0.464466C25.2692 0.659728 25.2692 0.976311 25.4645 1.17157L28.2929 4L25.4645 6.82843C25.2692 7.02369 25.2692 7.34027 25.4645 7.53553C25.6597 7.7308 25.9763 7.7308 26.1716 7.53553L29.3536 4.35355ZM0 4.5H29V3.5H0V4.5Z" fill="black")
+					.step-item-row-info
+						p 4
+						span Четвертый этап обустройства
+					svg(xmlns="http://www.w3.org/2000/svg" width="30" height="8" viewBox="0 0 30 8" fill="none")
+						path(opacity="0.5" d="M29.3536 4.35355C29.5488 4.15829 29.5488 3.84171 29.3536 3.64645L26.1716 0.464466C25.9763 0.269204 25.6597 0.269204 25.4645 0.464466C25.2692 0.659728 25.2692 0.976311 25.4645 1.17157L28.2929 4L25.4645 6.82843C25.2692 7.02369 25.2692 7.34027 25.4645 7.53553C25.6597 7.7308 25.9763 7.7308 26.1716 7.53553L29.3536 4.35355ZM0 4.5H29V3.5H0V4.5Z" fill="black")
+					.step-item-row-info
+						p 5
+						span Установка здания на новый фундамент
+					
+				
+
+
+		.container
+			.green-form
+				img(src="img/k1.png", alt="").k1
+				img(src="img/k2.png", alt="").k2
+				img(src="img/k3.png", alt="").k3
+				img(src="img/k4.png", alt="").k4
+				.green-form-border
+					.green-form-border-info
+						h3 Ответьте на 5 вопросов
+						p и мы вышлем вам    
+							span лучшее предложение
+							br
+							|по замене фундамента, исходя их ваших ответов
+						button(data-bs-toggle="modal" data-bs-target="#exampleModal1") Рассчитать стоимость
+					.green-form-border-img
+						img(src="img/man.png", alt="")
+
+	section.work#work
+		.container
+			.row.service-title
+				h2 Наши работы
+				p Маленький текст, который можно добавить к каждому блоку
+		.container
+			.row.work-img
+				.video.col-md-12.col-lg-6
+					video( id="video" preload="metadata" poster="img/poster.jpg")
+						source(src="//cdn.jsdelivr.net/npm/big-buck-bunny-1080p@0.0.6/video.mp4" type="video/mp4")
+					.play-button-wrapper
+						.play-gif(id="circle-play-b")
+							svg(xmlns="http://www.w3.org/2000/svg" width="45" height="52" viewBox="0 0 45 52" fill="none")
+								path(d="M4.35605 1.67696L42.9811 23.977C44.5381 24.876 44.5381 27.124 42.9811 28.023L4.35605 50.323C2.79905 51.222 0.852051 50.098 0.852051 48.3V3.69996C0.852051 1.90196 2.79805 0.777964 4.35605 1.67696Z" fill="white")
+								path(d="M42.9811 23.977L4.35608 1.67697C4.12308 1.54297 3.88208 1.46697 3.64008 1.41797L40.9811 22.977C42.5381 23.876 42.5381 26.124 40.9811 27.023L2.35608 49.323C2.00708 49.524 1.64008 49.611 1.27808 49.624C1.93408 50.562 3.23908 50.967 4.35608 50.323L42.9811 28.023C44.5381 27.124 44.5381 24.876 42.9811 23.977Z" fill="white")
+								path(d="M4.35605 1.67696L42.9811 23.977C44.5381 24.876 44.5381 27.124 42.9811 28.023L4.35605 50.323C2.79905 51.222 0.852051 50.098 0.852051 48.3V3.69996C0.852051 1.90196 2.79805 0.777964 4.35605 1.67696Z" stroke="white" stroke-miterlimit="10")
+								
+					
+				.col-lg-6
+					.row
+						.col-6.work-img-mb
+							a(href="img/gallery1.jpg" data-fancybox="gallery")
+								.overlay
+									.overlay-border
+										svg(xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 54 54" fill="none")
+											path(d="M23.625 38.8125C32.0128 38.8125 38.8125 32.0128 38.8125 23.625C38.8125 15.2372 32.0128 8.4375 23.625 8.4375C15.2372 8.4375 8.4375 15.2372 8.4375 23.625C8.4375 32.0128 15.2372 38.8125 23.625 38.8125Z" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round")
+											path(d="M45.5626 45.5626L34.3677 34.3677" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round")
+											path(d="M23.625 16.875V30.375" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round")
+											path(d="M16.875 23.625H30.375" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round")
+									
+								img(src="img/gallery1.jpg", alt="")
+						.col-6.work-img-mb
+							a(href="img/gallery2.jpg" data-fancybox="gallery")
+								.overlay
+									.overlay-border
+										svg(xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 54 54" fill="none")
+											path(d="M23.625 38.8125C32.0128 38.8125 38.8125 32.0128 38.8125 23.625C38.8125 15.2372 32.0128 8.4375 23.625 8.4375C15.2372 8.4375 8.4375 15.2372 8.4375 23.625C8.4375 32.0128 15.2372 38.8125 23.625 38.8125Z" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round")
+											path(d="M45.5626 45.5626L34.3677 34.3677" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round")
+											path(d="M23.625 16.875V30.375" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round")
+											path(d="M16.875 23.625H30.375" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round")
+								img(src="img/gallery2.jpg", alt="")
+						.col-6.work-img-mb
+							a(href="img/gallery3.jpg" data-fancybox="gallery")
+								.overlay
+									.overlay-border
+										svg(xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 54 54" fill="none")
+											path(d="M23.625 38.8125C32.0128 38.8125 38.8125 32.0128 38.8125 23.625C38.8125 15.2372 32.0128 8.4375 23.625 8.4375C15.2372 8.4375 8.4375 15.2372 8.4375 23.625C8.4375 32.0128 15.2372 38.8125 23.625 38.8125Z" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round")
+											path(d="M45.5626 45.5626L34.3677 34.3677" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round")
+											path(d="M23.625 16.875V30.375" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round")
+											path(d="M16.875 23.625H30.375" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round")
+								img(src="img/gallery3.jpg", alt="")
+						.col-6.work-img-mb
+							a(href="img/gallery4.jpg" data-fancybox="gallery")
+								.overlay
+									.overlay-border
+										svg(xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 54 54" fill="none")
+											path(d="M23.625 38.8125C32.0128 38.8125 38.8125 32.0128 38.8125 23.625C38.8125 15.2372 32.0128 8.4375 23.625 8.4375C15.2372 8.4375 8.4375 15.2372 8.4375 23.625C8.4375 32.0128 15.2372 38.8125 23.625 38.8125Z" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round")
+											path(d="M45.5626 45.5626L34.3677 34.3677" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round")
+											path(d="M23.625 16.875V30.375" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round")
+											path(d="M16.875 23.625H30.375" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round")
+								img(src="img/gallery4.jpg", alt="") 
+				
+				.col-lg-3.col-6.work-img-mb
+					a(href="img/gallery3.jpg" data-fancybox="gallery")
+						.overlay
+							.overlay-border
+								svg(xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 54 54" fill="none")
+									path(d="M23.625 38.8125C32.0128 38.8125 38.8125 32.0128 38.8125 23.625C38.8125 15.2372 32.0128 8.4375 23.625 8.4375C15.2372 8.4375 8.4375 15.2372 8.4375 23.625C8.4375 32.0128 15.2372 38.8125 23.625 38.8125Z" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round")
+									path(d="M45.5626 45.5626L34.3677 34.3677" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round")
+									path(d="M23.625 16.875V30.375" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round")
+									path(d="M16.875 23.625H30.375" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round")
+						img(src="img/gallery3.jpg", alt="")
+				.col-lg-3.col-6.work-img-mb
+					a(href="img/gallery2.jpg" data-fancybox="gallery")
+						.overlay
+							.overlay-border
+								svg(xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 54 54" fill="none")
+									path(d="M23.625 38.8125C32.0128 38.8125 38.8125 32.0128 38.8125 23.625C38.8125 15.2372 32.0128 8.4375 23.625 8.4375C15.2372 8.4375 8.4375 15.2372 8.4375 23.625C8.4375 32.0128 15.2372 38.8125 23.625 38.8125Z" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round")
+									path(d="M45.5626 45.5626L34.3677 34.3677" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round")
+									path(d="M23.625 16.875V30.375" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round")
+									path(d="M16.875 23.625H30.375" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round")
+						img(src="img/gallery2.jpg", alt="")
+				.col-lg-3.col-6.work-img-mb
+					a(href="img/gallery1.jpg" data-fancybox="gallery")
+						.overlay
+							.overlay-border
+								svg(xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 54 54" fill="none")
+									path(d="M23.625 38.8125C32.0128 38.8125 38.8125 32.0128 38.8125 23.625C38.8125 15.2372 32.0128 8.4375 23.625 8.4375C15.2372 8.4375 8.4375 15.2372 8.4375 23.625C8.4375 32.0128 15.2372 38.8125 23.625 38.8125Z" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round")
+									path(d="M45.5626 45.5626L34.3677 34.3677" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round")
+									path(d="M23.625 16.875V30.375" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round")
+									path(d="M16.875 23.625H30.375" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round")
+						img(src="img/gallery1.jpg", alt="")
+				.col-lg-3.col-6.work-img-mb
+						a(href="img/gallery4.jpg" data-fancybox="gallery")
+							.overlay
+								.overlay-border
+									svg(xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 54 54" fill="none")
+										path(d="M23.625 38.8125C32.0128 38.8125 38.8125 32.0128 38.8125 23.625C38.8125 15.2372 32.0128 8.4375 23.625 8.4375C15.2372 8.4375 8.4375 15.2372 8.4375 23.625C8.4375 32.0128 15.2372 38.8125 23.625 38.8125Z" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round")
+										path(d="M45.5626 45.5626L34.3677 34.3677" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round")
+										path(d="M23.625 16.875V30.375" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round")
+										path(d="M16.875 23.625H30.375" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round")
+							img(src="img/gallery4.jpg", alt="")
+
+	section.map
+		#map
+		.container.map-item
+			.map-blok
+				img(src="img/map.png", alt="").map
+				.map-blok-border
+					h2 Карта выполненных объектов
+					p Всё еще сомневаетесь?
+					p Мы выполнили более 150 объектов по всей Москве и Московской области
+					.line
+					button(data-bs-toggle="modal" data-bs-target="#exampleModal1") Задать вопрос
+					.main_header__top-social
+						a(href="https://wa.me/+79999921212") 
+							svg(xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none")
+								path(d="M20 9.74244C20 15.1231 15.6047 19.4849 10.1818 19.4849C8.46022 19.4849 6.84289 19.0449 5.43578 18.2727L0 20L1.77222 14.7729C0.878222 13.3049 0.363333 11.5831 0.363333 9.74244C0.363333 4.36178 4.75911 0 10.1818 0C15.6051 0 20 4.36178 20 9.74244ZM10.1818 1.55156C5.62978 1.55156 1.92711 5.226 1.92711 9.74244C1.92711 11.5347 2.51133 13.1944 3.49956 14.5447L2.46822 17.5867L5.64044 16.5784C6.94378 17.4342 8.50511 17.9333 10.182 17.9333C14.7333 17.9333 18.4367 14.2593 18.4367 9.74289C18.4367 5.22644 14.7336 1.55156 10.1818 1.55156ZM15.1398 11.9862C15.0791 11.8869 14.9189 11.8269 14.6784 11.7076C14.4376 11.5882 13.254 11.0102 13.034 10.9309C12.8133 10.8513 12.6524 10.8113 12.4922 11.0502C12.332 11.2893 11.8707 11.8269 11.73 11.9862C11.5896 12.146 11.4493 12.166 11.2084 12.0464C10.968 11.9271 10.1927 11.6747 9.27333 10.8613C8.558 10.2284 8.07489 9.44711 7.93444 9.20778C7.79422 8.96889 7.91978 8.83978 8.04 8.72089C8.14844 8.61378 8.28089 8.442 8.40111 8.30267C8.52178 8.16311 8.56178 8.06378 8.64156 7.90422C8.72222 7.74489 8.682 7.60556 8.62156 7.48578C8.56156 7.36644 8.07978 6.19133 7.87933 5.71311C7.67889 5.23533 7.47867 5.31489 7.338 5.31489C7.19778 5.31489 7.03711 5.29489 6.87667 5.29489C6.71622 5.29489 6.45533 5.35467 6.23467 5.59356C6.01422 5.83267 5.39267 6.41044 5.39267 7.58533C5.39267 8.76044 6.25467 9.89578 6.37533 10.0549C6.49556 10.214 8.03978 12.7038 10.4864 13.66C12.9333 14.6158 12.9333 14.2969 13.3747 14.2569C13.8156 14.2171 14.7982 13.6793 14.9996 13.122C15.1996 12.5638 15.1996 12.0858 15.1398 11.9862Z" fill="#11DC5F")
+								
+						a(href="https://t.me/+79999921212") 
+							svg(xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none")
+								g(clip-path="url(#clip0_16_456)")
+								path(d="M18.3764 1.77432L0.657317 8.64254C-0.0557229 8.96236 -0.296898 9.60291 0.484944 9.95051L5.03069 11.4026L16.0216 4.57485C16.6217 4.14621 17.2361 4.26051 16.7074 4.73202L7.2677 13.3232L6.97117 16.959C7.24583 17.5204 7.74873 17.523 8.0695 17.244L10.6811 14.76L15.154 18.1267C16.1928 18.7449 16.7581 18.346 16.9816 17.2129L19.9154 3.24924C20.22 1.85447 19.7006 1.23994 18.3764 1.77432Z" fill="#37AEE2")
+							
+								defs
+									clipPath(id="clip0_16_456")
+										rect(width="20" height="20" fill="white")
+						
+							
+						span Среднее время ответа 
+							b 2 минуты
+
+
+	section.specialist
+		.container
+			.specialist-blok
+				img(src="img/q1.png", alt="").q1
+				img(src="img/q2.png", alt="").q2
+				img(src="img/q3.png", alt="").q3
+				img(src="img/spec.png", alt="").spec
+				img(src="img/spec2.png", alt="").spec2
+				img(src="img/spec3.png", alt="").spec3
+
+
+				.specialist-blok-border
+					.specialist-blok-border-item
+						h2 Консультация 
+							span специалиста
+						p Наши специалисты помогут вам решить любой вопрос. Просто позвоните нам или закажите обатный звонок.
+					.specialist-blok-border-q
+						button(data-bs-toggle="modal" data-bs-target="#exampleModal1") Задать вопрос
+						.specialist-blok-border-q-s
+							.main_header__top-social
+								a(href="https://wa.me/+79999921212") 
+									svg(xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none")
+										path(d="M20 9.74244C20 15.1231 15.6047 19.4849 10.1818 19.4849C8.46022 19.4849 6.84289 19.0449 5.43578 18.2727L0 20L1.77222 14.7729C0.878222 13.3049 0.363333 11.5831 0.363333 9.74244C0.363333 4.36178 4.75911 0 10.1818 0C15.6051 0 20 4.36178 20 9.74244ZM10.1818 1.55156C5.62978 1.55156 1.92711 5.226 1.92711 9.74244C1.92711 11.5347 2.51133 13.1944 3.49956 14.5447L2.46822 17.5867L5.64044 16.5784C6.94378 17.4342 8.50511 17.9333 10.182 17.9333C14.7333 17.9333 18.4367 14.2593 18.4367 9.74289C18.4367 5.22644 14.7336 1.55156 10.1818 1.55156ZM15.1398 11.9862C15.0791 11.8869 14.9189 11.8269 14.6784 11.7076C14.4376 11.5882 13.254 11.0102 13.034 10.9309C12.8133 10.8513 12.6524 10.8113 12.4922 11.0502C12.332 11.2893 11.8707 11.8269 11.73 11.9862C11.5896 12.146 11.4493 12.166 11.2084 12.0464C10.968 11.9271 10.1927 11.6747 9.27333 10.8613C8.558 10.2284 8.07489 9.44711 7.93444 9.20778C7.79422 8.96889 7.91978 8.83978 8.04 8.72089C8.14844 8.61378 8.28089 8.442 8.40111 8.30267C8.52178 8.16311 8.56178 8.06378 8.64156 7.90422C8.72222 7.74489 8.682 7.60556 8.62156 7.48578C8.56156 7.36644 8.07978 6.19133 7.87933 5.71311C7.67889 5.23533 7.47867 5.31489 7.338 5.31489C7.19778 5.31489 7.03711 5.29489 6.87667 5.29489C6.71622 5.29489 6.45533 5.35467 6.23467 5.59356C6.01422 5.83267 5.39267 6.41044 5.39267 7.58533C5.39267 8.76044 6.25467 9.89578 6.37533 10.0549C6.49556 10.214 8.03978 12.7038 10.4864 13.66C12.9333 14.6158 12.9333 14.2969 13.3747 14.2569C13.8156 14.2171 14.7982 13.6793 14.9996 13.122C15.1996 12.5638 15.1996 12.0858 15.1398 11.9862Z" fill="#11DC5F")
+										
+								a(href="https://t.me/+79999921212") 
+									svg(xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none")
+										g(clip-path="url(#clip0_16_456)")
+										path(d="M18.3764 1.77432L0.657317 8.64254C-0.0557229 8.96236 -0.296898 9.60291 0.484944 9.95051L5.03069 11.4026L16.0216 4.57485C16.6217 4.14621 17.2361 4.26051 16.7074 4.73202L7.2677 13.3232L6.97117 16.959C7.24583 17.5204 7.74873 17.523 8.0695 17.244L10.6811 14.76L15.154 18.1267C16.1928 18.7449 16.7581 18.346 16.9816 17.2129L19.9154 3.24924C20.22 1.85447 19.7006 1.23994 18.3764 1.77432Z" fill="#37AEE2")
+									
+										defs
+											clipPath(id="clip0_16_456")
+												rect(width="20" height="20" fill="white")
+								
+								
+							span Среднее время 
+								br
+								|ответа 
+								b 2 минуты
+
+
+	section.rew#rew
+		.container
+			.row.service-title
+				h2 Отзывы
+				p Мы помогаем и нас за это ценят и благодарят
+		.container
+			.col_f-row
+				.col_f
+					.rew-blok
+						.rew-blok-title
+							img(src="img/avatar1.jpg", alt="")
+							.rew-blok-title-star
+								h3 Никодим Алексеев
+								.stars
+									svg(xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none")
+										path(d="M6.39997 0.339355L8.35979 4.31085L12.7428 4.94769L9.57141 8.03905L10.3199 12.4042L6.39997 10.3433L2.47985 12.4042L3.22856 8.03905L0.0571289 4.94769L4.43991 4.31085L6.39997 0.339355Z" fill="#FAC917")
+									svg(xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none")
+										path(d="M6.39997 0.339355L8.35979 4.31085L12.7428 4.94769L9.57141 8.03905L10.3199 12.4042L6.39997 10.3433L2.47985 12.4042L3.22856 8.03905L0.0571289 4.94769L4.43991 4.31085L6.39997 0.339355Z" fill="#FAC917")
+									svg(xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none")
+										path(d="M6.39997 0.339355L8.35979 4.31085L12.7428 4.94769L9.57141 8.03905L10.3199 12.4042L6.39997 10.3433L2.47985 12.4042L3.22856 8.03905L0.0571289 4.94769L4.43991 4.31085L6.39997 0.339355Z" fill="#FAC917")
+									svg(xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none")
+										path(d="M6.39997 0.339355L8.35979 4.31085L12.7428 4.94769L9.57141 8.03905L10.3199 12.4042L6.39997 10.3433L2.47985 12.4042L3.22856 8.03905L0.0571289 4.94769L4.43991 4.31085L6.39997 0.339355Z" fill="#FAC917")
+									svg(xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none")
+										path(d="M6.39997 0.339355L8.35979 4.31085L12.7428 4.94769L9.57141 8.03905L10.3199 12.4042L6.39997 10.3433L2.47985 12.4042L3.22856 8.03905L0.0571289 4.94769L4.43991 4.31085L6.39997 0.339355Z" fill="#FAC917")
+						p.text Отзыв о том, какая здоровская компания поднимала дом и как быстро и по разумным ценам они это сделали.
+						p.source Источник: 
+							span Яндекс.Карты	
+
+				.col_f
+					.rew-blok
+						.rew-blok-title
+							img(src="img/avatar2.jpg", alt="")
+							.rew-blok-title-star
+								h3 Александр Шпак
+								.stars
+									svg(xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none")
+										path(d="M6.39997 0.339355L8.35979 4.31085L12.7428 4.94769L9.57141 8.03905L10.3199 12.4042L6.39997 10.3433L2.47985 12.4042L3.22856 8.03905L0.0571289 4.94769L4.43991 4.31085L6.39997 0.339355Z" fill="#FAC917")
+									svg(xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none")
+										path(d="M6.39997 0.339355L8.35979 4.31085L12.7428 4.94769L9.57141 8.03905L10.3199 12.4042L6.39997 10.3433L2.47985 12.4042L3.22856 8.03905L0.0571289 4.94769L4.43991 4.31085L6.39997 0.339355Z" fill="#FAC917")
+									svg(xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none")
+										path(d="M6.39997 0.339355L8.35979 4.31085L12.7428 4.94769L9.57141 8.03905L10.3199 12.4042L6.39997 10.3433L2.47985 12.4042L3.22856 8.03905L0.0571289 4.94769L4.43991 4.31085L6.39997 0.339355Z" fill="#FAC917")
+									svg(xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none")
+										path(d="M6.39997 0.339355L8.35979 4.31085L12.7428 4.94769L9.57141 8.03905L10.3199 12.4042L6.39997 10.3433L2.47985 12.4042L3.22856 8.03905L0.0571289 4.94769L4.43991 4.31085L6.39997 0.339355Z" fill="#FAC917")
+									svg(xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none")
+										path(d="M6.39997 0.339355L8.35979 4.31085L12.7428 4.94769L9.57141 8.03905L10.3199 12.4042L6.39997 10.3433L2.47985 12.4042L3.22856 8.03905L0.0571289 4.94769L4.43991 4.31085L6.39997 0.339355Z" fill="#FAC917")
+						p.text Отзыв о том, какая здоровская компания поднимала дом.
+						p.source Источник: 
+							span Instagram
+				.col_f
+					.rew-blok
+						.rew-blok-title
+							img(src="img/avatar3.jpg", alt="")
+							.rew-blok-title-star
+								h3 Ирина Миронова
+								.stars
+									svg(xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none")
+										path(d="M6.39997 0.339355L8.35979 4.31085L12.7428 4.94769L9.57141 8.03905L10.3199 12.4042L6.39997 10.3433L2.47985 12.4042L3.22856 8.03905L0.0571289 4.94769L4.43991 4.31085L6.39997 0.339355Z" fill="#FAC917")
+									svg(xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none")
+										path(d="M6.39997 0.339355L8.35979 4.31085L12.7428 4.94769L9.57141 8.03905L10.3199 12.4042L6.39997 10.3433L2.47985 12.4042L3.22856 8.03905L0.0571289 4.94769L4.43991 4.31085L6.39997 0.339355Z" fill="#FAC917")
+									svg(xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none")
+										path(d="M6.39997 0.339355L8.35979 4.31085L12.7428 4.94769L9.57141 8.03905L10.3199 12.4042L6.39997 10.3433L2.47985 12.4042L3.22856 8.03905L0.0571289 4.94769L4.43991 4.31085L6.39997 0.339355Z" fill="#FAC917")
+									svg(xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none")
+										path(d="M6.39997 0.339355L8.35979 4.31085L12.7428 4.94769L9.57141 8.03905L10.3199 12.4042L6.39997 10.3433L2.47985 12.4042L3.22856 8.03905L0.0571289 4.94769L4.43991 4.31085L6.39997 0.339355Z" fill="#FAC917")
+									svg(xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none")
+										path(d="M6.39997 0.339355L8.35979 4.31085L12.7428 4.94769L9.57141 8.03905L10.3199 12.4042L6.39997 10.3433L2.47985 12.4042L3.22856 8.03905L0.0571289 4.94769L4.43991 4.31085L6.39997 0.339355Z" fill="#FAC917")
+						p.text Отзыв о том, какая здоровская компания поднимала дом и как быстро и по разумным ценам они это сделали. Немного длиннее предыдущего чтобы тоже было понятно, как он должен выглядеть
+						p.source Источник: 
+							span WhatsApp
+				.col_f
+					.rew-blok
+						.rew-blok-title
+							img(src="img/avatar4.jpg", alt="")
+							.rew-blok-title-star
+								h3 Максим Сергеевич
+								.stars
+									svg(xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none")
+										path(d="M6.39997 0.339355L8.35979 4.31085L12.7428 4.94769L9.57141 8.03905L10.3199 12.4042L6.39997 10.3433L2.47985 12.4042L3.22856 8.03905L0.0571289 4.94769L4.43991 4.31085L6.39997 0.339355Z" fill="#FAC917")
+									svg(xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none")
+										path(d="M6.39997 0.339355L8.35979 4.31085L12.7428 4.94769L9.57141 8.03905L10.3199 12.4042L6.39997 10.3433L2.47985 12.4042L3.22856 8.03905L0.0571289 4.94769L4.43991 4.31085L6.39997 0.339355Z" fill="#FAC917")
+									svg(xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none")
+										path(d="M6.39997 0.339355L8.35979 4.31085L12.7428 4.94769L9.57141 8.03905L10.3199 12.4042L6.39997 10.3433L2.47985 12.4042L3.22856 8.03905L0.0571289 4.94769L4.43991 4.31085L6.39997 0.339355Z" fill="#FAC917")
+									svg(xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none")
+										path(d="M6.39997 0.339355L8.35979 4.31085L12.7428 4.94769L9.57141 8.03905L10.3199 12.4042L6.39997 10.3433L2.47985 12.4042L3.22856 8.03905L0.0571289 4.94769L4.43991 4.31085L6.39997 0.339355Z" fill="#FAC917")
+									svg(xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none")
+										path(d="M6.39997 0.339355L8.35979 4.31085L12.7428 4.94769L9.57141 8.03905L10.3199 12.4042L6.39997 10.3433L2.47985 12.4042L3.22856 8.03905L0.0571289 4.94769L4.43991 4.31085L6.39997 0.339355Z" fill="#FAC917")
+						p.text Я просто в восторге, от компании с которой столкнулся и от их профессионализма и прекрасного сервиса
+						p.source Источник: 
+							span WhatsApp
+				.col_f
+					.rew-blok
+						.rew-blok-title
+							img(src="img/avatar4.jpg", alt="")
+							.rew-blok-title-star
+								h3 Максим Сергеевич
+								.stars
+									svg(xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none")
+										path(d="M6.39997 0.339355L8.35979 4.31085L12.7428 4.94769L9.57141 8.03905L10.3199 12.4042L6.39997 10.3433L2.47985 12.4042L3.22856 8.03905L0.0571289 4.94769L4.43991 4.31085L6.39997 0.339355Z" fill="#FAC917")
+									svg(xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none")
+										path(d="M6.39997 0.339355L8.35979 4.31085L12.7428 4.94769L9.57141 8.03905L10.3199 12.4042L6.39997 10.3433L2.47985 12.4042L3.22856 8.03905L0.0571289 4.94769L4.43991 4.31085L6.39997 0.339355Z" fill="#FAC917")
+									svg(xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none")
+										path(d="M6.39997 0.339355L8.35979 4.31085L12.7428 4.94769L9.57141 8.03905L10.3199 12.4042L6.39997 10.3433L2.47985 12.4042L3.22856 8.03905L0.0571289 4.94769L4.43991 4.31085L6.39997 0.339355Z" fill="#FAC917")
+									svg(xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none")
+										path(d="M6.39997 0.339355L8.35979 4.31085L12.7428 4.94769L9.57141 8.03905L10.3199 12.4042L6.39997 10.3433L2.47985 12.4042L3.22856 8.03905L0.0571289 4.94769L4.43991 4.31085L6.39997 0.339355Z" fill="#FAC917")
+									svg(xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none")
+										path(d="M6.39997 0.339355L8.35979 4.31085L12.7428 4.94769L9.57141 8.03905L10.3199 12.4042L6.39997 10.3433L2.47985 12.4042L3.22856 8.03905L0.0571289 4.94769L4.43991 4.31085L6.39997 0.339355Z" fill="#FAC917")
+						p.text Я просто в восторге, от компании с которой столкнулся и от их профессионализма и прекрасного сервиса
+						p.source Источник: 
+							span WhatsApp
+				.col_f
+					.rew-blok
+						.rew-blok-title
+							img(src="img/avatar3.jpg", alt="")
+							.rew-blok-title-star
+								h3 Ирина Миронова
+								.stars
+									svg(xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none")
+										path(d="M6.39997 0.339355L8.35979 4.31085L12.7428 4.94769L9.57141 8.03905L10.3199 12.4042L6.39997 10.3433L2.47985 12.4042L3.22856 8.03905L0.0571289 4.94769L4.43991 4.31085L6.39997 0.339355Z" fill="#FAC917")
+									svg(xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none")
+										path(d="M6.39997 0.339355L8.35979 4.31085L12.7428 4.94769L9.57141 8.03905L10.3199 12.4042L6.39997 10.3433L2.47985 12.4042L3.22856 8.03905L0.0571289 4.94769L4.43991 4.31085L6.39997 0.339355Z" fill="#FAC917")
+									svg(xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none")
+										path(d="M6.39997 0.339355L8.35979 4.31085L12.7428 4.94769L9.57141 8.03905L10.3199 12.4042L6.39997 10.3433L2.47985 12.4042L3.22856 8.03905L0.0571289 4.94769L4.43991 4.31085L6.39997 0.339355Z" fill="#FAC917")
+									svg(xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none")
+										path(d="M6.39997 0.339355L8.35979 4.31085L12.7428 4.94769L9.57141 8.03905L10.3199 12.4042L6.39997 10.3433L2.47985 12.4042L3.22856 8.03905L0.0571289 4.94769L4.43991 4.31085L6.39997 0.339355Z" fill="#FAC917")
+									svg(xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none")
+										path(d="M6.39997 0.339355L8.35979 4.31085L12.7428 4.94769L9.57141 8.03905L10.3199 12.4042L6.39997 10.3433L2.47985 12.4042L3.22856 8.03905L0.0571289 4.94769L4.43991 4.31085L6.39997 0.339355Z" fill="#FAC917")
+						p.text Отзыв о том, какая здоровская компания поднимала дом и как быстро и по разумным ценам они это сделали. Немного длиннее предыдущего чтобы тоже было понятно, как он должен выглядеть
+						p.source Источник: 
+							span WhatsApp
+				.col_f
+					.rew-blok
+						.rew-blok-title
+							img(src="img/avatar3.jpg", alt="")
+							.rew-blok-title-star
+								h3 Ирина Миронова
+								.stars
+									svg(xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none")
+										path(d="M6.39997 0.339355L8.35979 4.31085L12.7428 4.94769L9.57141 8.03905L10.3199 12.4042L6.39997 10.3433L2.47985 12.4042L3.22856 8.03905L0.0571289 4.94769L4.43991 4.31085L6.39997 0.339355Z" fill="#FAC917")
+									svg(xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none")
+										path(d="M6.39997 0.339355L8.35979 4.31085L12.7428 4.94769L9.57141 8.03905L10.3199 12.4042L6.39997 10.3433L2.47985 12.4042L3.22856 8.03905L0.0571289 4.94769L4.43991 4.31085L6.39997 0.339355Z" fill="#FAC917")
+									svg(xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none")
+										path(d="M6.39997 0.339355L8.35979 4.31085L12.7428 4.94769L9.57141 8.03905L10.3199 12.4042L6.39997 10.3433L2.47985 12.4042L3.22856 8.03905L0.0571289 4.94769L4.43991 4.31085L6.39997 0.339355Z" fill="#FAC917")
+									svg(xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none")
+										path(d="M6.39997 0.339355L8.35979 4.31085L12.7428 4.94769L9.57141 8.03905L10.3199 12.4042L6.39997 10.3433L2.47985 12.4042L3.22856 8.03905L0.0571289 4.94769L4.43991 4.31085L6.39997 0.339355Z" fill="#FAC917")
+									svg(xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none")
+										path(d="M6.39997 0.339355L8.35979 4.31085L12.7428 4.94769L9.57141 8.03905L10.3199 12.4042L6.39997 10.3433L2.47985 12.4042L3.22856 8.03905L0.0571289 4.94769L4.43991 4.31085L6.39997 0.339355Z" fill="#FAC917")
+						p.text Отзыв о том, какая здоровская компания поднимала дом и как быстро и по разумным ценам они это сделали. Немного длиннее предыдущего чтобы тоже было понятно, как он должен выглядеть
+						p.source Источник: 
+							span WhatsApp
+				.col_f
+					.rew-blok
+						.rew-blok-title
+							img(src="img/avatar2.jpg", alt="")
+							.rew-blok-title-star
+								h3 Александр Шпак
+								.stars
+									svg(xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none")
+										path(d="M6.39997 0.339355L8.35979 4.31085L12.7428 4.94769L9.57141 8.03905L10.3199 12.4042L6.39997 10.3433L2.47985 12.4042L3.22856 8.03905L0.0571289 4.94769L4.43991 4.31085L6.39997 0.339355Z" fill="#FAC917")
+									svg(xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none")
+										path(d="M6.39997 0.339355L8.35979 4.31085L12.7428 4.94769L9.57141 8.03905L10.3199 12.4042L6.39997 10.3433L2.47985 12.4042L3.22856 8.03905L0.0571289 4.94769L4.43991 4.31085L6.39997 0.339355Z" fill="#FAC917")
+									svg(xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none")
+										path(d="M6.39997 0.339355L8.35979 4.31085L12.7428 4.94769L9.57141 8.03905L10.3199 12.4042L6.39997 10.3433L2.47985 12.4042L3.22856 8.03905L0.0571289 4.94769L4.43991 4.31085L6.39997 0.339355Z" fill="#FAC917")
+									svg(xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none")
+										path(d="M6.39997 0.339355L8.35979 4.31085L12.7428 4.94769L9.57141 8.03905L10.3199 12.4042L6.39997 10.3433L2.47985 12.4042L3.22856 8.03905L0.0571289 4.94769L4.43991 4.31085L6.39997 0.339355Z" fill="#FAC917")
+									svg(xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none")
+										path(d="M6.39997 0.339355L8.35979 4.31085L12.7428 4.94769L9.57141 8.03905L10.3199 12.4042L6.39997 10.3433L2.47985 12.4042L3.22856 8.03905L0.0571289 4.94769L4.43991 4.31085L6.39997 0.339355Z" fill="#FAC917")
+						p.text Отзыв о том, какая здоровская компания поднимала дом.
+						p.source Источник: 
+							span Instagram
+			button Показать еще
+
+
+						
+
+
+	section.que#que
+		.container
+			.row.service-title
+				h2 Вопрос-ответ
+				p Маленький текст, который можно добавить к каждому блоку
+		.container
+			.que-blok
+				.help_item
+					input#question1.questions(type='checkbox' )
+					.plus 
+						svg(xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none")
+							path(d="M17.8125 8.75H11.25V2.1875C11.25 1.5 10.6875 0.9375 10 0.9375C9.3125 0.9375 8.75 1.5 8.75 2.1875V8.75H2.1875C1.5 8.75 0.9375 9.3125 0.9375 10C0.9375 10.6875 1.5 11.25 2.1875 11.25H8.75V17.8125C8.75 18.5 9.3125 19.0625 10 19.0625C10.6875 19.0625 11.25 18.5 11.25 17.8125V11.25H17.8125C18.5 11.25 19.0625 10.6875 19.0625 10C19.0625 9.3125 18.5 8.75 17.8125 8.75Z" fill="#67D07F")
+						
+					label.question(for='question1')
+						h2 Вы работаете по договору?
+					.answers
+						p На выполнение работ будет привлечено от 4 до 10 человек, в зависимости от объема работ. На выполнение работ будет привлечено от 4 до 10 человек, в зависимости от объема работ.
+						
+				.help_item
+					input#question2.questions(type='checkbox')
+					.plus 
+						svg(xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none")
+							path(d="M17.8125 8.75H11.25V2.1875C11.25 1.5 10.6875 0.9375 10 0.9375C9.3125 0.9375 8.75 1.5 8.75 2.1875V8.75H2.1875C1.5 8.75 0.9375 9.3125 0.9375 10C0.9375 10.6875 1.5 11.25 2.1875 11.25H8.75V17.8125C8.75 18.5 9.3125 19.0625 10 19.0625C10.6875 19.0625 11.25 18.5 11.25 17.8125V11.25H17.8125C18.5 11.25 19.0625 10.6875 19.0625 10C19.0625 9.3125 18.5 8.75 17.8125 8.75Z" fill="#67D07F")
+						
+					label.question(for='question2')
+						h2 В течение какого времени готовы приступить?
+					.answers
+						p На выполнение работ будет привлечено от 4 до 10 человек, в зависимости от объема работ. На выполнение работ будет привлечено от 4 до 10 человек, в зависимости от объема работ.
+				.help_item
+					input#question3.questions(type='checkbox' checked)
+					.plus 
+						svg(xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none")
+							path(d="M17.8125 8.75H11.25V2.1875C11.25 1.5 10.6875 0.9375 10 0.9375C9.3125 0.9375 8.75 1.5 8.75 2.1875V8.75H2.1875C1.5 8.75 0.9375 9.3125 0.9375 10C0.9375 10.6875 1.5 11.25 2.1875 11.25H8.75V17.8125C8.75 18.5 9.3125 19.0625 10 19.0625C10.6875 19.0625 11.25 18.5 11.25 17.8125V11.25H17.8125C18.5 11.25 19.0625 10.6875 19.0625 10C19.0625 9.3125 18.5 8.75 17.8125 8.75Z" fill="#67D07F")
+						
+					label.question(for='question3')
+						h2 Сколько человек будут выполнять работы?
+					.answers
+						p На выполнение работ будет привлечено от 4 до 10 человек, в зависимости от объема работ. На выполнение работ будет привлечено от 4 до 10 человек, в зависимости от объема работ.
+						
+				.help_item
+					input#question4.questions(type='checkbox')
+					.plus 
+						svg(xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none")
+							path(d="M17.8125 8.75H11.25V2.1875C11.25 1.5 10.6875 0.9375 10 0.9375C9.3125 0.9375 8.75 1.5 8.75 2.1875V8.75H2.1875C1.5 8.75 0.9375 9.3125 0.9375 10C0.9375 10.6875 1.5 11.25 2.1875 11.25H8.75V17.8125C8.75 18.5 9.3125 19.0625 10 19.0625C10.6875 19.0625 11.25 18.5 11.25 17.8125V11.25H17.8125C18.5 11.25 19.0625 10.6875 19.0625 10C19.0625 9.3125 18.5 8.75 17.8125 8.75Z" fill="#67D07F")
+						
+					label.question(for='question4')
+						h2 Какие гарантии вы даёте?
+					.answers
+						p На выполнение работ будет привлечено от 4 до 10 человек, в зависимости от объема работ. На выполнение работ будет привлечено от 4 до 10 человек, в зависимости от объема работ.
+				.help_item
+					input#question5.questions(type='checkbox')
+					.plus 
+						svg(xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none")
+							path(d="M17.8125 8.75H11.25V2.1875C11.25 1.5 10.6875 0.9375 10 0.9375C9.3125 0.9375 8.75 1.5 8.75 2.1875V8.75H2.1875C1.5 8.75 0.9375 9.3125 0.9375 10C0.9375 10.6875 1.5 11.25 2.1875 11.25H8.75V17.8125C8.75 18.5 9.3125 19.0625 10 19.0625C10.6875 19.0625 11.25 18.5 11.25 17.8125V11.25H17.8125C18.5 11.25 19.0625 10.6875 19.0625 10C19.0625 9.3125 18.5 8.75 17.8125 8.75Z" fill="#67D07F")
+						
+					label.question(for='question5')
+						h2 Сколько стоит ваш выезд и смета?
+					.answers
+						p На выполнение работ будет привлечено от 4 до 10 человек, в зависимости от объема работ. На выполнение работ будет привлечено от 4 до 10 человек, в зависимости от объема работ.
+				
+				.que-blok-footer
+					.que-blok-footer-item
+						p Остались вопросы?
+						.line
+					.que-blok-footer-item
+						button(data-bs-toggle="modal" data-bs-target="#exampleModal1") Задать вопрос
+						.specialist-blok-border-q-s
+							.main_header__top-social
+								a(href="https://wa.me/+79999921212") 
+									svg(xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none")
+										path(d="M20 9.74244C20 15.1231 15.6047 19.4849 10.1818 19.4849C8.46022 19.4849 6.84289 19.0449 5.43578 18.2727L0 20L1.77222 14.7729C0.878222 13.3049 0.363333 11.5831 0.363333 9.74244C0.363333 4.36178 4.75911 0 10.1818 0C15.6051 0 20 4.36178 20 9.74244ZM10.1818 1.55156C5.62978 1.55156 1.92711 5.226 1.92711 9.74244C1.92711 11.5347 2.51133 13.1944 3.49956 14.5447L2.46822 17.5867L5.64044 16.5784C6.94378 17.4342 8.50511 17.9333 10.182 17.9333C14.7333 17.9333 18.4367 14.2593 18.4367 9.74289C18.4367 5.22644 14.7336 1.55156 10.1818 1.55156ZM15.1398 11.9862C15.0791 11.8869 14.9189 11.8269 14.6784 11.7076C14.4376 11.5882 13.254 11.0102 13.034 10.9309C12.8133 10.8513 12.6524 10.8113 12.4922 11.0502C12.332 11.2893 11.8707 11.8269 11.73 11.9862C11.5896 12.146 11.4493 12.166 11.2084 12.0464C10.968 11.9271 10.1927 11.6747 9.27333 10.8613C8.558 10.2284 8.07489 9.44711 7.93444 9.20778C7.79422 8.96889 7.91978 8.83978 8.04 8.72089C8.14844 8.61378 8.28089 8.442 8.40111 8.30267C8.52178 8.16311 8.56178 8.06378 8.64156 7.90422C8.72222 7.74489 8.682 7.60556 8.62156 7.48578C8.56156 7.36644 8.07978 6.19133 7.87933 5.71311C7.67889 5.23533 7.47867 5.31489 7.338 5.31489C7.19778 5.31489 7.03711 5.29489 6.87667 5.29489C6.71622 5.29489 6.45533 5.35467 6.23467 5.59356C6.01422 5.83267 5.39267 6.41044 5.39267 7.58533C5.39267 8.76044 6.25467 9.89578 6.37533 10.0549C6.49556 10.214 8.03978 12.7038 10.4864 13.66C12.9333 14.6158 12.9333 14.2969 13.3747 14.2569C13.8156 14.2171 14.7982 13.6793 14.9996 13.122C15.1996 12.5638 15.1996 12.0858 15.1398 11.9862Z" fill="#11DC5F")
+										
+								a(href="https://t.me/+79999921212") 
+									svg(xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none")
+										g(clip-path="url(#clip0_16_456)")
+										path(d="M18.3764 1.77432L0.657317 8.64254C-0.0557229 8.96236 -0.296898 9.60291 0.484944 9.95051L5.03069 11.4026L16.0216 4.57485C16.6217 4.14621 17.2361 4.26051 16.7074 4.73202L7.2677 13.3232L6.97117 16.959C7.24583 17.5204 7.74873 17.523 8.0695 17.244L10.6811 14.76L15.154 18.1267C16.1928 18.7449 16.7581 18.346 16.9816 17.2129L19.9154 3.24924C20.22 1.85447 19.7006 1.23994 18.3764 1.77432Z" fill="#37AEE2")
+									
+										defs
+											clipPath(id="clip0_16_456")
+												rect(width="20" height="20" fill="white")
+								
+								
+							span Среднее время 
+								br
+								|ответа 
+								b 2 минуты
+
+	footer.footer#contact
+		.container.footer-blok
+			.footer-blok-left
+				.main_header__top
+					a(href="#").logo
+						img(src="img/logo.png", alt="" width="135" height="42") 
+					p.p Замена фундамента под домами в Москве и Московской области
+				p.p-b Мы работаем круглогодично без выходных! Уважаемые клиенты, обращаем Ваше внимание, что цены на сайте и цены из сметы могут отличаться. Цены на сайте носят ознакомительный характер.
+				img(src="img/footerImg.png", alt="").footer_img
+			.footer-blok-right
+				ul
+					li
+						a(href="#service") Услуги
+					li
+						a(href="#step") Этапы работ
+					li
+						a(href="#service") Акция
+					li
+						a(href="#work") Наши работы
+					li
+						a(href="#rew") Отзывы
+					li
+						a(href="que") Вопрос-ответ
+					li
+						a(href="#contact") Контакты
+				.footer-blok-right-info
+					.tel-info
+						span ежедневно с 9 до 19
+						a(href="tel:+74951337221").main_header__top-tel
+							p +7 (495) 133-72-21
+						a(href="tel:+79999921212").main_header__top-tel
+							p +7 (999) 992-12-12
+							svg(xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none")
+								path(d="M20 9.74244C20 15.1231 15.6047 19.4849 10.1818 19.4849C8.46022 19.4849 6.84289 19.0449 5.43578 18.2727L0 20L1.77222 14.7729C0.878222 13.3049 0.363333 11.5831 0.363333 9.74244C0.363333 4.36178 4.75911 0 10.1818 0C15.6051 0 20 4.36178 20 9.74244ZM10.1818 1.55156C5.62978 1.55156 1.92711 5.226 1.92711 9.74244C1.92711 11.5347 2.51133 13.1944 3.49956 14.5447L2.46822 17.5867L5.64044 16.5784C6.94378 17.4342 8.50511 17.9333 10.182 17.9333C14.7333 17.9333 18.4367 14.2593 18.4367 9.74289C18.4367 5.22644 14.7336 1.55156 10.1818 1.55156ZM15.1398 11.9862C15.0791 11.8869 14.9189 11.8269 14.6784 11.7076C14.4376 11.5882 13.254 11.0102 13.034 10.9309C12.8133 10.8513 12.6524 10.8113 12.4922 11.0502C12.332 11.2893 11.8707 11.8269 11.73 11.9862C11.5896 12.146 11.4493 12.166 11.2084 12.0464C10.968 11.9271 10.1927 11.6747 9.27333 10.8613C8.558 10.2284 8.07489 9.44711 7.93444 9.20778C7.79422 8.96889 7.91978 8.83978 8.04 8.72089C8.14844 8.61378 8.28089 8.442 8.40111 8.30267C8.52178 8.16311 8.56178 8.06378 8.64156 7.90422C8.72222 7.74489 8.682 7.60556 8.62156 7.48578C8.56156 7.36644 8.07978 6.19133 7.87933 5.71311C7.67889 5.23533 7.47867 5.31489 7.338 5.31489C7.19778 5.31489 7.03711 5.29489 6.87667 5.29489C6.71622 5.29489 6.45533 5.35467 6.23467 5.59356C6.01422 5.83267 5.39267 6.41044 5.39267 7.58533C5.39267 8.76044 6.25467 9.89578 6.37533 10.0549C6.49556 10.214 8.03978 12.7038 10.4864 13.66C12.9333 14.6158 12.9333 14.2969 13.3747 14.2569C13.8156 14.2171 14.7982 13.6793 14.9996 13.122C15.1996 12.5638 15.1996 12.0858 15.1398 11.9862Z" fill="#11DC5F")
+							svg(xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none")
+								g(clip-path="url(#clip0_16_456)")
+								path(d="M18.3764 1.77432L0.657317 8.64254C-0.0557229 8.96236 -0.296898 9.60291 0.484944 9.95051L5.03069 11.4026L16.0216 4.57485C16.6217 4.14621 17.2361 4.26051 16.7074 4.73202L7.2677 13.3232L6.97117 16.959C7.24583 17.5204 7.74873 17.523 8.0695 17.244L10.6811 14.76L15.154 18.1267C16.1928 18.7449 16.7581 18.346 16.9816 17.2129L19.9154 3.24924C20.22 1.85447 19.7006 1.23994 18.3764 1.77432Z" fill="#37AEE2")
+							
+								defs
+									clipPath(id="clip0_16_456")
+										rect(width="20" height="20" fill="white")
+					a(href="").mail info@start-sezona.ru
+					p.adress г. Москва, ул. Искры, д. 17А 
+					button(type="button" data-bs-toggle="modal" data-bs-target="#exampleModal") Бесплатная консультация
+					button(data-bs-toggle="modal" data-bs-target="#exampleModal1").calc-btn
+						svg(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16" fill="none")
+							mask(id="mask0_16_62" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="16" height="16")
+								rect(width="16" height="16" fill="url(#pattern0)")
+							
+							g(mask="url(#mask0_16_62)")
+								rect(y="-2" width="19" height="19" fill="#67CF7F")
+							
+							defs
+								pattern(id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1")
+									use(xlink:href="#image0_16_62" transform="scale(0.015625)")
+								
+								image(id="image0_16_62" width="64" height="64" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAJxSURBVHic7ZuxTiMxEIY/DgTSCRANEtI9C0iR7goQDXkDWorwcrwDxRVwFQgpokHJkTYgQQXFjoXX6yjx4vVssv6lkXbH8fDPj+1xDIYvbAID4BqYAh8rZlPJbSC5lvALuGkByVR2IzmDqNGl5I3dAlvrwAVwTvdwAEygmBeuOg9AH9jVYhcRuxS5PFDN8xrg3XHeA3saTBvGHkVudq5vUFWlr0QwBfpU8604VmHYz8I2Tr5r8mBjLTWrxCjl+0OLRVuQBdAmoI2YAhwDI7HjiHEbR6Us1MTIijGKwKspNFYFlqWa5CpgIwugTUAbdQQwq/28xdNtX7Q6zIo/z2pXn9AqUIdcSHVoOn6pT+op0HRlqBU/dAScAGNPv3n2JH214+d9gP2Sq4A2AW1kASLGGlvP/yPGbRyxvg2a1XvR1VgL+UzQfslrgDYBbWQBtAloIwugTUAbWQBtAtrIAnyj7xnwDAyBQ0/7obRN5LOLovVnggYTq88r0LPaeuIz7c8BcZOeCW4EEHMxBfbl+SdwBZzK+5X4DF6+8XNCkORM0OCI8m/ZjASf7yggbtIzQa8jAO5Qd82dGm1AVAFgtghtTB4cnp0vg5CnQOsWwab3AdEEGFJNtId/VAwD4ibdB3gdC6KNG6GxJ56LaAKcUYjwyOyt8KN8JuTfb5f2b4PLglK+nS+DWQBtAtrIAmgT0IZPgJ3kLNJh23X4BPidgIgW/vic7qWpO1b30tQd5Vyn4L82d0+xe1uF6bBDkYt7Y+wDuTY38DR0xQYAWxTXSLXJpLZ/kjvQvcvTt1iXpw02gUvgL8UxtjbJ2PYiuV1iXZ//BBg+brlPz5BgAAAAAElFTkSuQmCC")
+						|Калькулятор проекта
+		.footer-bottom
+			.container.footer-bottom-item
+				p © Все права защищены, 2021 - Замена фундамента под домом
+				a(href="").p-b Политика конфиденциальности
+				a(href="").footer-bottom-link
+					p Дизайн сайта
+					img(src="img/link.png", alt="" width="66" heigh="26")
+
+	div(class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true")
+		div(class="modal-dialog  modal-dialog-centered ")
+			div(class="modal-content")
+				.cons
+					.cons-border
+						button(data-bs-dismiss="modal" aria-label="Close").close
+							svg(xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none")
+								path(d="M12.9425 12.0586L23.7701 1.23102C24.0141 0.986953 24.0141 0.59125 23.7701 0.347187C23.5259 0.103125 23.1303 0.103125 22.8862 0.347187L12.0586 11.1747L1.23101 0.347109C0.98695 0.103047 0.591247 0.103047 0.347185 0.347109C0.103044 0.591172 0.103044 0.986875 0.347185 1.23094L11.1747 12.0586L0.347107 22.8862C0.102966 23.1303 0.102966 23.5259 0.347107 23.7701C0.469138 23.8921 0.62906 23.9531 0.78906 23.9531C0.94906 23.9531 1.10898 23.8921 1.23101 23.7701L12.0586 12.9425L22.8862 23.7701C23.0083 23.8921 23.1681 23.9531 23.3281 23.9531C23.4881 23.9531 23.648 23.8921 23.7701 23.7701C24.0141 23.5259 24.0141 23.1303 23.7701 22.8862L12.9425 12.0586Z" fill="#999999")
+						h2 Бесплатная консультация
+						p ответим вам течение 2-х минут
+						form
+							input(type="text" placeholder="Имя ")
+							input(type="text" placeholder="Телефон")
+							button Получить консультацию
+						span Нажимая кнопку вы соглашаетесь с Политикой конфиденциальности сайта
+
+	div(class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true")
+		div(class="modal-dialog  modal-dialog-centered ")
+			div(class="modal-content")
+				.cons
+					.cons-border
+						button(data-bs-dismiss="modal" aria-label="Close").close
+							svg(xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none")
+								path(d="M12.9425 12.0586L23.7701 1.23102C24.0141 0.986953 24.0141 0.59125 23.7701 0.347187C23.5259 0.103125 23.1303 0.103125 22.8862 0.347187L12.0586 11.1747L1.23101 0.347109C0.98695 0.103047 0.591247 0.103047 0.347185 0.347109C0.103044 0.591172 0.103044 0.986875 0.347185 1.23094L11.1747 12.0586L0.347107 22.8862C0.102966 23.1303 0.102966 23.5259 0.347107 23.7701C0.469138 23.8921 0.62906 23.9531 0.78906 23.9531C0.94906 23.9531 1.10898 23.8921 1.23101 23.7701L12.0586 12.9425L22.8862 23.7701C23.0083 23.8921 23.1681 23.9531 23.3281 23.9531C23.4881 23.9531 23.648 23.8921 23.7701 23.7701C24.0141 23.5259 24.0141 23.1303 23.7701 22.8862L12.9425 12.0586Z" fill="#999999")
+						h2 Задать вопрос
+						p ответим вам течение 2-х минут
+						form
+							input(type="text" placeholder="Имя ")
+							input(type="text" placeholder="Телефон")
+							textarea(placeholder="Напишите Ваш вопрос..." rows="4")
+							button Получить консультацию
+						span Нажимая кнопку вы соглашаетесь с Политикой конфиденциальности сайта
+						

@@ -1,0 +1,1147 @@
+@import "../base/base"
+@import "../base/fonts"
+
+
+
+
+
+
+/*HEADER*/
+
+.main_header
+    &__top
+        display: flex
+        align-items: center
+        margin-bottom: 20px
+        justify-content: space-between
+        .p
+            font-family: 'Rubik', sans-serif
+            font-style: normal
+            font-weight: 300
+            font-size: 10px
+            line-height: 12px
+            color: #999999
+            max-width: 162px
+        &-calc
+            display: flex
+            align-items: center
+         
+            svg
+                margin-right: 12px
+            span
+                font-family: 'Rubik', sans-serif
+                font-style: normal
+                font-weight: normal
+                font-size: 12px
+                line-height: 14px
+                color: #181818
+                max-width: 74px
+        &-social
+            display: flex
+            align-items: center
+            a
+                margin-right: 10px
+            span
+                font-family: 'Rubik', sans-serif
+                font-style: normal
+                font-weight: 300
+                font-size: 10px
+                line-height: 11px
+                max-width: 80px
+        
+        &-tel
+            display: flex
+            flex-direction: column
+          
+            span
+                font-family: 'Rubik', sans-serif
+                font-style: normal
+                font-weight: 300
+                font-size: 10px
+                line-height: 11px
+                color: #999999
+                margin-bottom: 8px
+            p
+                font-family: 'Rubik', sans-serif
+                font-style: normal
+                font-weight: 500
+                font-size: 15px
+                line-height: 11px
+                color: #000000
+        button
+            font-family: 'Rubik', sans-serif
+            font-style: normal
+            font-weight: 500
+            font-size: 10px
+            line-height: 10px
+            color: #67CE7E
+            border: 1px solid #67D07F
+            box-sizing: border-box
+            border-radius: 50px
+            background: transparent
+            padding: 10px 15px
+            transition: 0.3s
+           
+            &:hover
+                background: #67D07F
+                color: white
+
+        .mobile-menu
+            display: none
+
+
+    &__bottom
+        border-top: 1px solid #EEEEEE
+        border-bottom: 1px solid #EEEEEE
+        
+  
+        ul
+            max-width: 926px
+            margin: 0 auto
+            display: flex
+            align-items: center
+            justify-content: space-between
+            padding: 6px
+            li
+                padding: 9px 22px
+                display: flex
+                transition: 0.3s
+                border: 1px solid transparent
+                border-radius: 20px
+                &:hover
+                    border: 1px solid #67CE7E
+                    box-sizing: border-box
+                    border-radius: 20px
+                    a
+                        color: rgba(102, 206, 125, 1)
+                a
+                    font-family: 'Rubik', sans-serif
+                    font-style: normal
+                    font-weight: normal
+                    font-size: 15px
+                    line-height: 18px
+                    color: #777777
+                &:nth-child(3)
+                    &:hover
+                        border: 1px solid rgba(206, 187, 13, 1)
+                    a
+                        display: flex
+                        align-items: center
+                        color: rgba(206, 187, 13, 1)
+                        svg
+                            margin-right: 8px
+
+        
+/*MAIN*/
+
+.main
+    background-image: url("../../img/mainBackground.png")
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    padding-top: 29px
+  
+    &-blok
+        margin-top: 60px
+        h1
+            max-width: 520px
+            font-family: 'Rubik', sans-serif
+            font-style: normal
+            font-weight: bold
+            font-size: 43px
+            line-height: 51px
+            text-transform: uppercase
+            color: #000000
+            margin-bottom: 30px
+        p
+            font-family: 'Rubik', sans-serif
+            font-style: normal
+            font-weight: 300
+            font-size: 20px
+            line-height: 24px
+            color: #000000
+            margin-bottom: 40px
+        span
+            font-family: 'Rubik', sans-serif
+            font-style: normal
+            font-weight: 500
+            font-size: 26px
+            line-height: 31px
+            color: #7E51FF
+            margin-bottom: 87px
+            display: block
+        &-btn
+            margin-bottom: 126px
+            button
+                font-family: 'Rubik', sans-serif
+                font-style: normal
+                font-weight: 500
+                font-size: 15px
+                line-height: 18px
+                color: #FFFFFF
+                padding: 19px 22px
+                background: linear-gradient(180deg, #67D07F 0%, #65CB7B 100%)
+                border-radius: 40px
+                border: none
+                box-shadow: inset 0 -2px 0px rgba(94, 135, 95, 1), 0px 10px 25px rgba(0, 0, 0, 0.25)
+                transition: 0.3s
+                &:hover
+                    opacity: 0.8
+            &_arrow
+                padding-left: 55px
+                margin-top: 50px
+                display: flex
+                p
+                    font-family: 'Rubik', sans-serif
+                    font-style: normal
+                    font-weight: 300
+                    font-size: 12px
+                    line-height: 14px
+                    letter-spacing: 0.02em
+                    color: #757575
+                    max-width: 206px
+                    margin-bottom: 0
+                svg
+                    position: relative
+                    top: -21px
+                    left: -14px
+
+
+    &-bottom
+        margin-bottom: 125px
+        &_item
+            display: flex
+            align-items: center
+            justify-content: center
+            img
+                margin-right: 12px
+            p
+                font-family: 'Rubik', sans-serif
+                font-style: normal
+                font-weight: 300
+                font-size: 15px
+                line-height: 18px
+                color: #000000
+                max-width: 168px
+                b
+                    font-weight: 500
+
+
+
+
+/*SECTION SERVICE*/
+
+.service
+    background: linear-gradient(0deg,#f8f8f8 95%,#f8f8f8a6 0)
+    padding: 4px 0 88px
+    position: relative
+    .right-img
+        position: absolute
+        right: 0
+        bottom: -95px
+    &-title
+        margin-bottom: 36px
+        h2
+            font-family: 'Rubik', sans-serif
+            font-style: normal
+            font-weight: 500
+            font-size: 30px
+            line-height: 36px
+            text-transform: uppercase
+            color: #000000
+            margin-bottom: 9px
+            text-align: center
+        p
+            font-family: 'Rubik', sans-serif
+            font-style: normal
+            font-weight: 300
+            font-size: 14px
+            line-height: 17px
+            text-align: center
+            color: #999999
+    &-blok
+        justify-content: space-between
+    &-item
+        padding: 36px 12px 29px
+        background: #FFFFFF
+        border-radius: 20px
+        max-width: 363px
+        display: flex
+        flex-direction: column
+        align-items: center
+        margin-bottom: 10px
+        img
+            margin-bottom: 31px
+        .title
+            margin-bottom: 21px
+            font-family: 'Rubik', sans-serif
+            font-style: normal
+            font-weight: 500
+            font-size: 18.6729px
+            line-height: 22px
+            color: #000000
+        .f-start
+            align-self: flex-start
+        ul
+            li
+                font-family: 'Rubik', sans-serif
+                font-style: normal
+                font-weight: 300
+                font-size: 15.5607px
+                line-height: 30px
+                color: #000000
+                position: relative
+                &:after
+                    content: ""
+                    background: #FFBF42
+                    width: 8px
+                    height: 8px
+                    border-radius: 50%
+                    position: absolute
+                    left: -18px
+                    top: 50%
+                    transform: translateY(-50%)
+           
+        .sale-span
+            margin-top: 11px
+            padding:  0 20px
+            font-family: 'Rubik', sans-serif
+            font-style: normal
+            font-weight: 500
+            font-size: 10.3738px
+            line-height: 30px
+            color: #000000
+            background: #FFBF42
+            border-radius: 51.8692px
+            margin-bottom: 3px
+        .sale-p
+            font-family: Rubik
+            font-style: normal
+            font-weight: 300
+            font-size: 15.5607px
+            line-height: 31px
+            text-decoration-line: line-through
+            color: #B3B3B3
+        .price
+            font-family: 'Rubik', sans-serif
+            font-style: normal
+            font-weight: 500
+            font-size: 20.7477px
+            line-height: 30px
+            color: #000000
+            margin-bottom: 23px
+            margin-top: 35px
+        .red
+            color: rgba(236, 17, 17, 1)
+            margin-top: 0
+
+        button
+            font-family: 'Rubik', sans-serif
+            font-style: normal
+            font-weight: 500
+            font-size: 12px
+            line-height: 15px
+            color: #FFFFFF
+            padding: 15px 18px
+            background: linear-gradient(180deg, #67D07F 0%, #65CB7B 100%)
+            border-radius: 40px
+            border: none
+            box-shadow: inset 0 -2px 0px rgba(94, 135, 95, 1), 0px 10px 25px rgba(0, 0, 0, 0.25)
+            transition: 0.3s
+            width: 245px
+            &:hover
+                opacity: 0.8
+
+
+
+
+
+/*SECTION STEP*/
+
+.step
+    padding: 54px 0 103px
+    .service-title
+        margin-bottom: 70px
+    &-item
+        position: relative
+        .left-img
+            position: absolute
+            left: 0
+        &-row
+            display: flex
+            justify-content: space-between
+            &-info
+                display: flex
+                flex-direction: column
+                align-items: center
+                max-width: 173px
+                p
+                    font-family: 'Rubik', sans-serif
+                    font-style: normal
+                    font-weight: 900
+                    font-size: 110px
+                    line-height: 130px
+                    text-align: center
+                    text-transform: uppercase
+                    color: #67D07F
+                    opacity: 0.5
+                span
+                    font-family: 'Rubik', sans-serif
+                    font-style: normal
+                    font-weight: 500
+                    font-size: 16px
+                    line-height: 19px
+                    text-align: center
+                    color: #000000
+            svg
+                align-self: center
+
+
+    .green-form
+        margin-top: 145px
+        padding: 16px
+        background: #67D07F
+        border-radius: 20px
+        position: relative
+        .k1
+            position: absolute
+            bottom: 0
+            left: 0
+        .k2
+            position: absolute
+            top: 0
+            left: 35%
+        .k3 
+            top: 50%
+            left: 50%
+            position: absolute
+            transform: translate(-50%,-50%)
+        .k4
+            position: absolute
+            right: 20%
+        &-border
+            padding: 68px 66px 57px
+            border: 1px solid rgba(164, 227, 178, 1)
+            box-sizing: border-box
+            border-radius: 15px
+            position: relative
+            z-index: 9
+            &-img
+                img
+                    position: absolute
+                    right: 87px
+                    bottom: -51.6px
+            &-info
+                h3
+                    font-family: 'Rubik', sans-serif
+                    font-style: normal
+                    font-weight: bold
+                    font-size: 30px
+                    line-height: 36px
+                    text-transform: uppercase
+                    color: #FFFFFF
+                    margin-bottom: 14px
+                p
+                    font-family: 'Rubik', sans-serif
+                    font-style: normal
+                    font-weight: normal
+                    font-size: 18px
+                    line-height: 29px
+                    color: #FFFFFF
+                    margin-bottom: 27px
+                    max-width: 428px
+                    span
+                        color: #000000
+                        padding: 0px 12px
+                        background: #FFBF42
+                        border-radius: 51.8692px
+                        display: inline-flex
+                button
+                    font-family: 'Rubik', sans-serif
+                    font-style: normal
+                    font-weight: 500
+                    font-size: 16px
+                    line-height: 19px
+                    text-align: center
+                    color: #FFFFFF
+                    border: 2px solid #FFFFFF
+                    box-sizing: border-box
+                    border-radius: 50px
+                    padding: 15px 24px
+                    background: transparent
+                    transition: 0.3s
+                    &:hover
+                        background: white
+                        color: #67D07F
+
+
+/*SECTION WORK*/
+
+.work
+    video
+        width: 100%
+       
+    &-img
+        .video
+            margin-bottom: 8px
+            position: relative
+            video
+                object-fit: fill
+                height: 100%
+                border-radius: 20px
+            .play-button-wrapper
+                position: absolute
+                top: 0
+                left: 0
+                right: 0
+                bottom: 0
+                display: flex
+                align-items: center
+                justify-content: center
+                width: 100%
+                height: auto
+        img
+            width: 100%
+            border-radius: 20px
+            object-fit: cover
+            height: auto
+        &-mb
+            margin-bottom: 8px
+        a
+            position: relative
+            display: flex
+            transition: 0.3s
+            &:hover
+                .overlay
+                    opacity: 1
+            .overlay
+                position: absolute
+                background-color: rgba(0, 0, 0, 0.5)
+                width: 100%
+                z-index: 9
+                height: 100%
+                top: 0
+                border-radius: 20px
+                padding: 6px
+                opacity: 0
+                &-border
+                    border: 1px solid #FFFFFF
+                    box-sizing: border-box
+                    border-radius: 20px
+                    height: 100%
+                    display: flex
+                    justify-content: center
+                    align-items: center
+      
+
+
+
+
+/*SECTION MAP*/
+[class*="ymaps-2"][class*="-ground-pane"]
+    -webkit-filter: grayscale(100%) 
+    filter: grayscale(100%) 
+
+
+    
+.map
+    margin-top: 125px
+    position: relative
+    #map
+        width: 100%
+        height: 700px
+        position: absolute
+        z-index: 0
+    &-item
+        padding: 45px 0
+        display: flex
+        justify-content: flex-end
+    &-blok
+        max-width: 326px
+        background: #FFFFFF
+        box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1)
+        border-radius: 20px
+        padding: 10px
+        position: relative
+        z-index: 1
+        .map
+            position: absolute
+            bottom: 0
+            right: 0
+            z-index: -1
+        &-border
+            padding: 37px 28px 48px
+            border: 1px solid #F1F1F1
+            box-sizing: border-box
+            border-radius: 15px
+        
+            h2
+                margin-bottom: 41px
+                font-family: 'Rubik', sans-serif
+                font-style: normal
+                font-weight: 500
+                font-size: 30px
+                line-height: 36px
+                color: #000000
+            p
+                font-family: 'Rubik', sans-serif
+                font-style: normal
+                font-weight: 300
+                font-size: 18px
+                line-height: 21px
+                color: #000000
+                margin-bottom: 25px
+            .line
+                background:#EEEEEE
+                width: 100%
+                margin-bottom: 42px
+                height: 1px
+
+            button
+                width: 100%
+                background: linear-gradient(180deg, #67D07F 0%, #65CB7B 100%)
+                border-radius: 50px
+                padding: 15px 0
+                text-align: center
+                font-family: 'Rubik', sans-serif
+                font-style: normal
+                font-weight: 500
+                font-size: 14px
+                line-height: 17px
+                border: none
+                color: #FFFFFF
+                margin-bottom: 30px
+                transition: 0.3s
+                &:hover
+                   opacity: 0.8
+            span
+                display: block!important
+            .main_header__top-social
+                justify-content: center
+
+
+/*SECTION SPECIALIST*/
+.specialist
+    margin-top: 145px
+    margin-bottom: 60px
+    &-blok
+        position: relative
+        background: #FFFFFF
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.06)
+        border-radius: 20px
+        padding: 11px 9px
+        .q1
+            position: absolute
+            left: 0
+            bottom: 0
+        .q2
+            position: absolute
+            left: 40%
+            top: 80% 
+            transform: translate(-50%, -50%)
+        .q3
+            position: absolute
+            right: 36px
+            top: 0
+        .spec
+            position: absolute
+            top: 0 
+            right: 0
+        .spec2, .spec3
+            display: none
+        &-border
+            border: 1px solid #F1F1F1
+            box-sizing: border-box
+            border-radius: 15px
+            padding: 76px 38px
+            display: flex
+   
+            &-item
+                margin-right: 103px
+                h2
+                    font-family: 'Rubik', sans-serif
+                    font-style: normal
+                    font-weight: 500
+                    font-size: 22px
+                    line-height: 26px
+                    text-transform: uppercase
+                    color: #67D07F
+                    margin-bottom: 12px
+                    span
+                        color: black
+                p
+                    font-family: 'Rubik', sans-serif
+                    font-style: normal
+                    font-weight: 300
+                    font-size: 14px
+                    line-height: 17px
+                    color: #999999
+                    max-width: 394px
+            &-q
+                button
+                    
+                    background: linear-gradient(180deg, #67D07F 0%, #65CB7B 100%)
+                    border-radius: 50px
+                    padding: 12px 48px
+                    text-align: center
+                    font-family: 'Rubik', sans-serif
+                    font-style: normal
+                    font-weight: 500
+                    font-size: 12px
+                    line-height: 14px
+                    border: none
+                    color: #FFFFFF
+                    transition: 0.3s
+                    margin-bottom: 9px
+                    &:hover
+                        opacity: 0.8
+                &-s
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    span
+                        font-size: 10px
+                        line-height: 11px
+
+
+
+
+/*SECTION REW*/
+
+
+.rew
+    background-image: url("../../img/rew.png")
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+    padding: 15px 0 46px
+    margin-bottom: 116px
+    .col_f-row
+        margin: 0 auto
+        justify-content: space-between
+        .col_f
+            max-width: 270px
+    &-blok
+        padding: 27px 17px
+        background: #FFFFFF
+        box-shadow: 0px 4.22857px 25.3714px rgba(0, 0, 0, 0.1)
+        border-radius: 21.1429px
+        margin-bottom: 10px
+        &-title
+            display: flex
+            align-items: center
+            margin-bottom: 19px
+            img
+                margin-right: 9px
+            h3
+                margin-bottom: 4px
+                font-family: 'Rubik', sans-serif
+                font-style: normal
+                font-weight: normal
+                font-size: 14.8px
+                line-height: 18px
+                color: #000000
+            .stars 
+                display: flex
+                svg
+                    &:not(:last-child)
+                        margin-right: 3px
+        .text
+            font-family: 'Rubik', sans-serif
+            font-style: normal
+            font-weight: 300
+            font-size: 14.8px
+            line-height: 18px
+            color: #000000
+            margin-bottom: 19px
+        .source
+            font-family: 'Rubik', sans-serif
+            font-style: normal
+            font-weight: 300
+            font-size: 14.8px
+            line-height: 18px
+            color: #999999
+            span
+                color: black
+                font-weight: 500
+    button
+        margin: 0 auto
+        margin-top: 58px
+        font-family: 'Rubik', sans-serif
+        font-style: normal
+        font-weight: normal
+        font-size: 16px
+        line-height: 19px
+        text-align: center
+        color: #67D07F
+        padding: 15px 45px
+        border: 1px solid #67D07F
+        box-sizing: border-box
+        border-radius: 50px
+        background: transparent
+        ransition: 0.3s
+        display: flex
+        &:hover
+            background-color: #67D07F
+            color: white
+
+
+
+
+
+/*SECTION QUE*/
+
+.que
+    margin-bottom: 194px
+    &-blok
+        max-width: 920px
+        margin: 0 auto
+
+        .help_item
+            position: relative
+            margin-bottom: 16px
+            padding: 16px 33px
+            background: #FFFFFF
+            box-shadow: 0px 4px 35px rgba(0, 0, 0, 0.07)
+            border-radius: 20px
+           
+            .question
+                width: 102%
+                position: relative
+                z-index: 999
+                h2
+                    font-family: 'Rubik', sans-serif
+                    font-style: normal
+                    font-weight: normal
+                    font-size: 19px
+                    line-height: 23px
+                    color: #000000
+                    cursor: pointer
+                
+            .plus
+                position: absolute
+                right: 20px
+                transition: 0.3s ease
+
+            .answers
+                transition: 0.3s
+                display: none
+                margin-top: 25px
+                p
+                    font-family: 'Rubik', sans-serif
+                    font-style: normal
+                    font-weight: 300
+                    font-size: 19px
+                    line-height: 23px
+                    color: #000000
+                    max-width: 781px
+                    margin: 0 auto
+
+
+            .questions
+                display: none
+                &:checked 
+                    ~ 
+                        
+                        .answers
+                            display: block
+                        .plus
+                            transform: rotate(45deg)
+                            svg
+                                path
+                                    fill: black
+
+        &-footer
+            display: flex
+            align-items: center
+            margin-top: 48px
+            &-item
+                display: flex
+                align-items: center
+                p
+                    font-family: 'Rubik', sans-serif
+                    font-style: normal
+                    font-weight: 300
+                    font-size: 19px
+                    line-height: 23px
+                    color: #000000
+                    margin-right: 38px
+                .line
+                    width: 288px
+                    height: 1px
+                    background: #EEEEEE
+                button
+                    background: linear-gradient(180deg, #67D07F 0%, #65CB7B 100%)
+                    border-radius: 50px
+                    padding: 12px 48px
+                    text-align: center
+                    font-family: 'Rubik', sans-serif
+                    font-style: normal
+                    font-weight: 500
+                    font-size: 12px
+                    line-height: 14px
+                    border: none
+                    color: #FFFFFF
+                    transition: 0.3s
+                    margin-right: 36px
+                    margin-left: 24px
+                    &:hover
+                        opacity: 0.8
+
+
+
+
+/*SECTION FOOTER*/
+
+.footer
+    padding-top: 43px
+    background: #F8F8F8
+    &-blok
+        display: flex
+        justify-content: space-between
+        padding-bottom: 63px
+        position: relative
+        &-left
+            .main_header__top
+                justify-content: unset
+                a
+                    margin-right: 28px
+            .p-b
+                font-family: 'Rubik', sans-serif
+                font-style: normal
+                font-weight: 300
+                font-size: 12px
+                line-height: 18px
+                color: #999999
+                max-width: 569px
+                margin-bottom: 20px
+            .footer_img
+                position: absolute
+                bottom: -65px
+                z-index: 
+
+        &-right
+            display: flex
+            ul
+                margin-right: 91px
+                li
+                    display: flex
+                    &:not(:last-child)
+                        margin-bottom: 15px
+                    a
+                        font-family: 'Rubik', sans-serif
+                        font-style: normal
+                        font-weight: normal
+                        font-size: 15px
+                        line-height: 18px
+                        color: #777777
+                        transition: 0.3s
+                        white-space: nowrap
+                        &:hover
+                            color: rgba(103, 208, 127, 1)
+
+            &-info
+                .tel-info
+                    display: flex
+                    flex-direction: column
+                    .main_header__top-tel
+                        display: flex
+                        flex-direction: row
+                        white-space: nowrap
+                        align-items: center
+                        svg
+                            margin-left: 9px
+                    
+                    span
+                        font-family: 'Rubik', sans-serif
+                        font-style: normal
+                        font-weight: 300
+                        font-size: 10px
+                        line-height: 11px
+                        color: #999999
+                        margin-bottom: 6px
+
+                    a
+                        display: block
+                        margin-bottom: 12px
+
+                .mail
+                    font-family: 'Rubik', sans-serif
+                    font-style: normal
+                    font-weight: 300
+                    font-size: 12px
+                    line-height: 11px
+                    color: #000000
+                    margin-bottom: 14px
+                    display: block
+
+                .adress
+                    font-family: 'Rubik', sans-serif
+                    font-style: normal
+                    font-weight: 300
+                    font-size: 12px
+                    line-height: 11px
+                    color: #000000
+                    margin-bottom: 21px
+                button
+                    display: block
+                    font-family: 'Rubik', sans-serif
+                    font-style: normal
+                    font-weight: 500
+                    font-size: 10px
+                    line-height: 10px
+                    text-align: center
+                    color: #67D07F
+                    border: 1px solid #67D07F
+                    box-sizing: border-box
+                    border-radius: 50px
+                    padding: 11px 14px
+                    background: transparent
+                    transition: 0.3s
+                    margin-bottom: 14px
+                    &:hover
+                        background: #67D07F
+                        color: white
+                .calc-btn
+                    padding: 8px 14px
+                    color: black
+                    &:hover
+                        svg
+                            g 
+                                rect
+                                    fill: white
+                    svg
+                        margin-right: 7px
+
+    &-bottom
+        padding: 25px 0
+        background: white
+        position: relative
+        z-index: 9
+        &-item
+            display: flex
+            justify-content: space-between
+            align-items: center
+            p, a
+                font-family: 'Rubik', sans-serif
+                font-style: normal
+                font-weight: 300
+                font-size: 12px
+                line-height: 14px
+                color: #777777
+
+        &-link
+            display: flex
+            align-items: center
+            p
+                font-family: 'Rubik', sans-serif
+                font-style: normal
+                font-weight: 300
+                font-size: 12px
+                line-height: 14px
+                color: #777777
+                position: relative
+                top: 4px
+
+            img
+                margin-left: 7px
+
+
+
+
+
+
+/*SECTION MODALS*/
+.modal-content
+    background: #FFFFFF
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1)
+    border-radius: 20px
+
+.cons
+    padding: 16px
+    &-border
+        padding: 13px 65px 26px
+        border: 1px solid #F1F1F1
+        box-sizing: border-box
+        border-radius: 15px
+        display: flex
+        flex-direction: column
+        align-items: center
+        .close
+            border: none
+            background: none
+            margin-bottom: 31px
+        h2
+            margin-bottom: 15px
+            font-family: 'Rubik', sans-serif
+            font-style: normal
+            font-weight: 500
+            font-size: 30px
+            line-height: 36px
+            color: #000000
+            white-space: nowrap
+        p
+            margin-bottom: 54px
+            font-family: 'Rubik', sans-serif
+            font-style: normal
+            font-weight: 300
+            font-size: 18px
+            line-height: 21px
+            color: #777777
+        form
+            display: flex
+            flex-direction: column
+            width: 359px
+            input, textarea
+                border: none
+                padding: 16px
+                padding-left: 0
+                border-bottom: 1px solid #CCCCCC
+                font-family: 'Rubik', sans-serif
+                font-style: normal
+                font-weight: bold
+                font-size: 22px
+                line-height: 26px
+                color: #000000
+                margin-bottom: 30px
+
+                &::placeholder
+                    font-family: 'Rubik', sans-serif
+                    font-style: normal
+                    font-weight: 300
+                    font-size: 20px
+                    line-height: 24px
+                    color: #999999
+                &:focus
+                    border-bottom: 1px solid black
+            textarea
+                resize: none
+            button
+                margin-bottom: 34px
+                width: 100%
+                padding: 20px 0px
+                background: linear-gradient(180deg, #67D07F 0%, #65CB7B 100%)
+                border-radius: 50px
+                font-family: 'Rubik', sans-serif
+                font-style: normal
+                font-weight: 500
+                font-size: 20px
+                line-height: 24px
+                color: #FFFFFF
+                border: none
+                transition: 0.3s
+                &:hover
+                    opacity: 0.8
+        span
+            font-family: 'Rubik', sans-serif
+            font-style: normal
+            font-weight: 300
+            font-size: 15px
+            line-height: 18px
+            text-align: center
+            color: #999999
+
+
+
+
+@import "media"
